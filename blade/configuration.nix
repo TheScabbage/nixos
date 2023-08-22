@@ -74,7 +74,16 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
- 
+
+  # NVIDIA 
+  # Make sure opengl is enabled
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
  
@@ -82,7 +91,7 @@
   users.users.scabbage = {
     isNormalUser = true;
     description = "Scabbage";
-    extraGroups = [ "networkmanager" "wheel" "openrazer" "docker" "audio" "plugdev" ];
+    extraGroups = [ "networkmanager" "wheel" "openrazer" "docker" "audio" "plugdev" "fuse"];
     packages = with pkgs; [
       firefox
       kate
@@ -90,33 +99,31 @@
     ];
   };
 
+
   # Shell aliases
   programs.bash.shellAliases = {
     l = "ls -alh";
     cfg = "sudo vim /etc/nixos/configuration.nix";
-    nbs = "sudo nixos-rebuild switch -I nixos-config=~/nixos/blade/configuration.nix";
+    nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/nixos/blade/configuration.nix";
     try = "nix-shell -p ";
   };
 
  
   # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "scabbage";
+  #services.xserver.displayManager.autoLogin.enable = true;
+  #services.xserver.displayManager.autoLogin.user = "scabbage";
  
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
  
  
- 
- 
+  # Flatpak 
+  services.flatpak.enable = true;
  
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
- 
-    #openrazer
-    openrazer-daemon
- 
+
     # Tools
     vim
     git
@@ -128,13 +135,28 @@
     openssl
     ffmpeg_6-full 
     mpv
+    fuse
+    openjdk17-bootstrap
+    rstudio          
+    
 
     # Apps
     polychromatic
     skypeforlinux
     discord
-    steam    
+    vscode
+    reaper
+    freecad
+    prusa-slicer
+    inkscape
+    freecad
+    steam-run
+    gparted
  
+    # Drivers n shit
+    ntfs3g
+    exfatprogs
+
     # Touchpad
     touchegg
  
@@ -148,7 +170,15 @@
     netcat-openbsd
     libguestfs
   ];
- 
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
+
+
+
   environment.variables = rec {
     MOZ_USE_XINPUT2="1";
   };
