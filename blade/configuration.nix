@@ -103,7 +103,7 @@
   # Shell aliases
   programs.bash.shellAliases = {
     l = "ls -alh";
-    cfg = "sudo vim $HOME/nixos/blade/configuration.nix";
+    cfg = "vim $HOME/nixos/blade/configuration.nix";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/nixos/blade/configuration.nix";
     try = "nix-shell -p ";
   };
