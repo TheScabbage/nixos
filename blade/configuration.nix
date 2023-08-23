@@ -137,7 +137,10 @@
     mpv
     fuse
     openjdk17-bootstrap
-    rstudio          
+    rstudio
+    ocaml
+    rustup
+    gcc
 
     # Apps
     polychromatic
