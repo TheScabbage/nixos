@@ -171,6 +171,27 @@
     iproute2
     netcat-openbsd
     libguestfs
+
+    # Gaming
+    # WINE 
+    wine
+    winetricks
+    protontricks
+    vulkan-tools
+
+    # Lutris
+    # lutris-unwrapped  # (not needed)
+    lutris
+
+    # Extra dependencies
+    gnutls
+    openldap
+    libgpgerror
+    freetype
+    sqlite
+    libxml2
+    xml2
+    SDL2
   ];
 
   programs.steam = {
