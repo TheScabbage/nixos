@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "m37-2";
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -42,14 +42,6 @@
     LC_TIME = "en_AU.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.defaultSession = "plasmawayland";
-  services.xserver.desktopManager.plasma5.enable = true;
-
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
@@ -59,48 +51,21 @@
   # Configure console keymap
   console.keyMap = "dvorak";
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-  };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.scabbage = {
     isNormalUser = true;
     description = "scabbage";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-      kate
-    ];
+    packages = with pkgs; [];
   };
   
-
-  # shell aliases
   programs.bash.shellAliases = {
     l = "ls -alh";
     cfg = "vim $HOME/nixos/m37/configuration.nix";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/nixos/m37/configuration.nix";
     try = "nix-shell -p ";
   };
+
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -109,17 +74,14 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      vim
-     git
      wget
      curl
      unzip
-     bitwarden
-     barrier
      openssl
      rustup
      gcc
      sox
-     prismlauncher
+     git     
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
