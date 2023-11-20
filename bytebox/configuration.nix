@@ -88,12 +88,10 @@
     yoink = "git pull";
   };
 
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true; 
-  };
+
   hardware.opengl.driSupport32Bit = true; 
+
+  services.flatpak.enable = true;
 
   # Meat and potatoes
   environment.systemPackages = with pkgs; [
@@ -101,16 +99,23 @@
     wget
     curl
     git
+    which
     unzip
     barrier
     ocaml
     rustup
+    go
+    pkg-config
     odin
     gcc
     tmux
+    openssl
+
+    cmake
+    gcc9
+    libllvm
 
     bitwarden
-    steam
     blender
     discord
     discordo
@@ -119,17 +124,19 @@
     signal-desktop
     
     vscode
-    unityhub
     reaper
     freecad
     prusa-slicer
     
-    wine
-    winetricks
-    protontricks
-    vulkan-tools
+    freetype
+    sqlite
+    libxml2
+    xml2
+    SDL2
 
+    # Vanity
     nerdfonts
+    neofetch
   ];
 
   # OpenSSH
