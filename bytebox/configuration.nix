@@ -83,7 +83,8 @@
     vi  = "nvim";
     vim = "nvim";
     dotfiles = "git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME";
-    import-dotfiles = "git clone --bare git@github.com:TheScabbage/dotfiles.git $HOME/.dotfiles";
+    import-dotfiles = "git clone --bare git@github.com:TheScabbage/dotfiles.git $HOME/.dotfiles && echo Imported dotfiles. Don't forget to run `dotfiles checkout`";
+
   };
 
 
