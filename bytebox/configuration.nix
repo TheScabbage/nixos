@@ -67,7 +67,9 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       firefox
+      chromium
       kate
+      gimp
     ];
   };
 
@@ -93,20 +95,40 @@
 
   services.flatpak.enable = true;
 
+  programs.nix-ld.enable = true;
+
+  # Sets up all the libraries to load
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc 
+    zlib
+    openssl
+  ];
+
   # Meat and potatoes
   environment.systemPackages = with pkgs; [
     neovim
+    ripgrep
     wget
     curl
     git
+    git-lfs
     which
     unzip
     barrier
-    ocaml
+    gnupg
+
+    zig
     rustup
     go
     pkg-config
+    dotnet-sdk
+    vimPlugins.omnisharp-extended-lsp-nvim
+    arduino
+    arduino-mk
+    arduino-cli
+    arduino-language-server
     odin
+    ocaml
     gcc
     tmux
     openssl
@@ -123,11 +145,22 @@
     skypeforlinux
     signal-desktop
     
+    unityhub
     vscode
     reaper
     freecad
     prusa-slicer
+    input-leap
+
+    # Deej dependencies
+    gtk3
+    libayatana-appindicator
+    libappindicator-gtk3
+    webkitgtk
     
+    #Live wallpaper
+    qt6.qtwebsockets
+
     freetype
     sqlite
     libxml2
