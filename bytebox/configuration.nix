@@ -70,6 +70,8 @@
       chromium
       kate
       gimp
+      obs-studio
+      vlc
     ];
   };
 
@@ -104,6 +106,12 @@
     openssl
   ];
 
+  programs.gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+  };
+  services.pcscd.enable = true;
+
   # Meat and potatoes
   environment.systemPackages = with pkgs; [
     neovim
@@ -116,12 +124,23 @@
     unzip
     barrier
     gnupg
+    pinentry
+
+    # Allow neovim -> system clipboard
+    xclip
+    wl-clipboard
 
     zig
     rustup
+
     go
     pkg-config
-    dotnet-sdk
+
+    omnisharp-roslyn
+    dotnet-sdk_8
+    dotnet-runtime_8
+    icu
+
     vimPlugins.omnisharp-extended-lsp-nvim
     arduino
     arduino-mk
@@ -132,6 +151,7 @@
     gcc
     tmux
     openssl
+    wine
 
     cmake
     gcc9
@@ -144,6 +164,7 @@
     vencord
     skypeforlinux
     signal-desktop
+    wezterm
     
     unityhub
     vscode
@@ -158,9 +179,6 @@
     libappindicator-gtk3
     webkitgtk
     
-    #Live wallpaper
-    qt6.qtwebsockets
-
     freetype
     sqlite
     libxml2
