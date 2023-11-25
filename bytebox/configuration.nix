@@ -104,6 +104,7 @@
     stdenv.cc.cc 
     zlib
     openssl
+    openssl.dev
   ];
 
   programs.gnupg.agent = {
@@ -164,7 +165,6 @@
     vencord
     skypeforlinux
     signal-desktop
-    wezterm
     
     unityhub
     vscode
