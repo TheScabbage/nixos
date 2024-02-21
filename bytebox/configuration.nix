@@ -152,6 +152,7 @@
   virtualisation.docker.enable = true;
   # Meat and potatoes
   environment.systemPackages = with pkgs; [
+    # CLI Tools
     neovim
     ripgrep
     btop
