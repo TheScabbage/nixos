@@ -20,7 +20,6 @@
   time.timeZone = "Australia/Perth";
 
   i18n.defaultLocale = "en_AU.UTF-8";
-
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_AU.UTF-8";
     LC_IDENTIFICATION = "en_AU.UTF-8";
@@ -52,6 +51,7 @@
 
   # Configure console keymap
   console.keyMap = "dvorak";
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -110,7 +110,6 @@
     vid = "neovide";
   };
 
-
   # OpenGL
   hardware.opengl.enable = true;
   hardware.opengl.driSupport32Bit = true; 
@@ -150,8 +149,10 @@
   services.blueman.enable = true;
 
   virtualisation.docker.enable = true;
+
   # Meat and potatoes
   environment.systemPackages = with pkgs; [
+
     # CLI Tools
     neovim
     ripgrep
@@ -218,6 +219,7 @@
     rustdesk
     rustdesk-server
     xemu
+
     # Talk with monkeys
     skypeforlinux
     # signal being shit so using flatpak until its fixed
