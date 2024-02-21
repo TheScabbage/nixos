@@ -205,6 +205,7 @@
     libsForQt5.kcalc
     rustdesk
     rustdesk-server
+    xemu
     # Talk with monkeys
     skypeforlinux
     # signal being shit so using flatpak until its fixed
