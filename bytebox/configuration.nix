@@ -6,10 +6,11 @@
       ./hardware-configuration.nix
     ];
 
+  networking.hostName = "bytebox"; 
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "bytebox"; 
 
   networking.networkmanager.enable = true;
 
