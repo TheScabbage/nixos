@@ -110,6 +110,8 @@
   hardware.opengl.driSupport32Bit = true; 
 
   services.flatpak.enable = true;
+  # OpenSSH
+  services.openssh.enable = true;
 
   programs.nix-ld.enable = true;
 
@@ -266,8 +268,6 @@
     neofetch
   ];
 
-  # OpenSSH
-  services.openssh.enable = true;
 
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
