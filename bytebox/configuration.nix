@@ -33,11 +33,16 @@
     LC_TIME = "en_AU.UTF-8";
   };
 
-  services.xserver.enable = true;
-
   # Desktop Environment
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.enable = true;
+  services.xserver = {
+    displayManager.defaultSession = "plasmawayland";
+    videoDrivers = [ "amdgpu" ];
+    displayManager.sddm.enable = true;
+    desktopManager.plasma5.enable = true;
+  };
+
+  programs.dconf.enable = true;
 
   # Keyboard
   services.xserver = {
