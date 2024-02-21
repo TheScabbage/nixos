@@ -83,6 +83,7 @@
       prismlauncher
       prusa-slicer
       inkscape
+      qbittorrent
       rnote
       glava
     ];
