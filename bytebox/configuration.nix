@@ -80,6 +80,7 @@
       gimp
       obs-studio
       vlc
+      prismlauncher
     ];
   };
 
