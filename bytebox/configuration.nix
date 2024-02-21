@@ -113,11 +113,11 @@
   # OpenSSH
   services.openssh.enable = true;
 
-  programs.nix-ld.enable = true;
   # Flatpak
   services.flatpak.enable = true;
 
   # Sets up all the libraries to load
+  programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc 
     zlib
@@ -134,11 +134,13 @@
       enable = true;
       enableSSHSupport = true;
   };
+
   services.pcscd.enable = true;
 
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
+
   virtualisation.docker.enable = true;
   # Meat and potatoes
   environment.systemPackages = with pkgs; [
