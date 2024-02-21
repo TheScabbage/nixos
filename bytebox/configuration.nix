@@ -119,6 +119,11 @@
     zlib
     openssl
     openssl.dev
+    udev
+    glibc
+    glib
+    libevdev
+    icu
   ];
 
   programs.gnupg.agent = {
@@ -131,17 +136,47 @@
   environment.systemPackages = with pkgs; [
     neovim
     ripgrep
+    btop
     wget
     curl
     git
     git-lfs
-    which
+    lf
+    zoxide
+    fzf
+    tldr
+    wezterm
     unzip
     barrier
     gnupg
     pinentry
+    docker-compose
+    ffmpeg
+    dos2unix
+    entr
+    gcc
+    tmux
+    openssl
+    wine64
+    evtest
+    gh
+    gamemode
+    conda
     steamPackages.steamcmd
+    stow
     lazygit
+    cloc
+    exercism
+    p7zip
+    ollama
+
+    cmake
+    gcc9
+    glibc
+    glib
+    libllvm
+
+
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
@@ -155,6 +190,7 @@
     peek
     rhythmbox
     picard
+    yt-dlp
     jamesdsp
     libsForQt5.kcalc
     rustdesk
@@ -175,35 +211,49 @@
     xclip
     wl-clipboard
 
+    # Zig
     zig
+    zls
     rustup
 
+    # Go
     go
     pkg-config
 
+    # JavaScript
+    nodejs_21
+    typescript
+
+    # Lua
+    lua
+    lua54Packages.luarocks
+
+    # CSharp
     omnisharp-roslyn
     dotnet-sdk_8
     dotnet-runtime_8
     icu
-
+    powershell
     vimPlugins.omnisharp-extended-lsp-nvim
+
+    # Arduino
     arduino
     arduino-mk
     arduino-cli
     arduino-language-server
+
+    # Python
+    python3
+
+    # Java
+    jdt-language-server
+
+    # Others
     odin
     ocaml
-    gcc
-    tmux
-    openssl
-    wine
+    jdk17
+    vala
 
-    cmake
-    gcc9
-    libllvm
-
-    prusa-slicer
-    input-leap
 
     freetype
     sqlite
