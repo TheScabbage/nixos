@@ -75,7 +75,6 @@
     description = "scabbage";
     extraGroups = [ "networkmanager" "wheel" "dialout" "docker" ];
     packages = with pkgs; [
-      firefox
       chromium
       kate
       gimp
@@ -135,6 +134,9 @@
     barrier
     gnupg
     pinentry
+    (firefox.override {
+        cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
+      })
 
     # Allow neovim -> system clipboard
     xclip
