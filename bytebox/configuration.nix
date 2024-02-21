@@ -84,6 +84,7 @@
       prusa-slicer
       inkscape
       rnote
+      glava
     ];
   };
 
