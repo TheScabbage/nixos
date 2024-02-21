@@ -206,6 +206,7 @@
     vscode
     reaper
     bitwarden
+    obsidian
     freecad
     davinci-resolve
     peek
