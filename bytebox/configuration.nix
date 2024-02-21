@@ -82,6 +82,8 @@
       vlc
       prismlauncher
       prusa-slicer
+      inkscape
+      rnote
     ];
   };
 
