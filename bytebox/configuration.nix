@@ -187,6 +187,8 @@
     libllvm
 
 
+    # phat GUI Apps
+    neovide
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
