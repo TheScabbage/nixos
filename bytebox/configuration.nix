@@ -205,12 +205,6 @@
     prusa-slicer
     input-leap
 
-    # Deej dependencies
-    gtk3
-    libayatana-appindicator
-    libappindicator-gtk3
-    webkitgtk
-    
     freetype
     sqlite
     libxml2
