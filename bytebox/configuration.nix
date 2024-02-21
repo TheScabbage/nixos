@@ -140,10 +140,36 @@
     barrier
     gnupg
     pinentry
+    steamPackages.steamcmd
     lazygit
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
+    blender
+    unityhub
+    vscode
+    reaper
+    bitwarden
+    freecad
+    davinci-resolve
+    peek
+    rhythmbox
+    picard
+    jamesdsp
+    libsForQt5.kcalc
+    rustdesk
+    rustdesk-server
+    # Talk with monkeys
+    skypeforlinux
+    # signal being shit so using flatpak until its fixed
+    #signal-desktop
+
+    (discord.override {
+        # For some reason discord breaks now with OpenAsar.
+        # Disabled until issue is fixed.
+        # withOpenASAR = true;
+        withVencord = true;
+    })
 
     # Allow neovim -> system clipboard
     xclip
@@ -176,18 +202,6 @@
     gcc9
     libllvm
 
-    bitwarden
-    blender
-    discord
-    discordo
-    vencord
-    skypeforlinux
-    signal-desktop
-    
-    unityhub
-    vscode
-    reaper
-    freecad
     prusa-slicer
     input-leap
 
