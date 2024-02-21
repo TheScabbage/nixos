@@ -110,11 +110,12 @@
 
   hardware.opengl.driSupport32Bit = true; 
 
-  services.flatpak.enable = true;
   # OpenSSH
   services.openssh.enable = true;
 
   programs.nix-ld.enable = true;
+  # Flatpak
+  services.flatpak.enable = true;
 
   # Sets up all the libraries to load
   programs.nix-ld.libraries = with pkgs; [
