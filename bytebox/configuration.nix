@@ -11,6 +11,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Fixes Finals crashing on startup
+  boot.kernelParams = [ "clearcpuid=304" ];
 
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
