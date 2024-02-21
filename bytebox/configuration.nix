@@ -105,6 +105,9 @@
     import-dotfiles = "git clone --bare git@github.com:TheScabbage/dotfiles.git $HOME/.dotfiles";
     yeet = "git push";
     yoink = "git pull";
+    oc = "find . | entr -r ";
+    ns = "nix-shell";
+    vid = "neovide";
   };
 
 
