@@ -265,6 +265,9 @@
     jdk17
     vala
 
+    electron
+    xwayland
+    xwaylandvideobridge
 
     freetype
     sqlite
