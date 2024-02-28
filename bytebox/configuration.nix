@@ -205,7 +205,6 @@
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
-    blender
     unityhub
     vscode
     reaper
