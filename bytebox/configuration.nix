@@ -91,6 +91,7 @@
 
   # Allow unfree
   nixpkgs.config.allowUnfree = true;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Shell aliases
   programs.fish.shellAliases = {
@@ -99,6 +100,7 @@
     cfg = "vi $HOME/.config/nixos/bytebox/configuration.nix";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/.config/nixos/bytebox/configuration.nix";
     try = "nix-shell -p ";
+    search = "nix search nixpkgs ";
     vi  = "nvim";
     vim = "nvim";
     dotfiles = "git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME";
