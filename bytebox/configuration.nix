@@ -222,6 +222,7 @@
     rustdesk
     rustdesk-server
     xemu
+    libsForQt5.spectacle
 
     # Talk with monkeys
     skypeforlinux
