@@ -184,6 +184,7 @@
     gh
     gamemode
     conda
+    steam
     steamPackages.steamcmd
     stow
     lazygit
