@@ -10,6 +10,11 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.extraModulePackages = with config.boot.kernelPackages; [
+    xone
+  ];
+
+  hardware.xone.enable = true;
 
   # Fixes Finals crashing on startup
   boot.kernelParams = [ "clearcpuid=304" ];
