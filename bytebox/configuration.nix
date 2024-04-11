@@ -8,6 +8,11 @@
 
   networking.hostName = "bytebox"; 
 
+  fileSystems."/mnt/brother-chungus" = {
+      device = "/dev/disk/by-uuid/388c40a0-ef36-4d7c-b08f-6cd9af63b9c6";
+      fsType = "ext4";
+    };
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.extraModulePackages = with config.boot.kernelPackages; [
