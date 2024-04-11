@@ -115,13 +115,12 @@
     search = "nix search nixpkgs ";
     vi  = "nvim";
     vim = "nvim";
-    dotfiles = "git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME";
-    import-dotfiles = "git clone --bare git@github.com:TheScabbage/dotfiles.git $HOME/.dotfiles";
     yeet = "git push";
     yoink = "git pull";
     oc = "find . | entr -r ";
     ns = "nix-shell";
     vid = "neovide";
+    sd = "pushd ~/dotfiles && stow . && popd && echo \"Dotfiles updated.\" || echo \"Failed to update dotfiles.\"";
   };
 
   # OpenGL
