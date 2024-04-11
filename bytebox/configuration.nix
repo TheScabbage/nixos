@@ -166,7 +166,6 @@
 
   # Meat and potatoes
   environment.systemPackages = with pkgs; [
-
     # CLI Tools
     neovim
     ripgrep
@@ -175,12 +174,17 @@
     curl
     git
     git-lfs
+    pijul
+    bat
     lf
+    eza
+    zellij
     zoxide
     fzf
     tldr
     wezterm
     unzip
+    p7zip
     barrier
     gnupg
     pinentry
@@ -194,6 +198,7 @@
     wine64
     evtest
     gh
+    dig
     gamemode
     conda
     steam
@@ -202,15 +207,18 @@
     lazygit
     cloc
     exercism
-    p7zip
+    cups
     ollama
+    libsForQt5.kdeconnect-kde
+    libsForQt5.kdialog
 
     cmake
     gcc9
     glibc
     glib
     libllvm
-
+    ilspycmd
+    gdb
 
     # phat GUI Apps
     neovide
@@ -223,7 +231,7 @@
     bitwarden
     obsidian
     freecad
-    davinci-resolve
+    libreoffice
     peek
     rhythmbox
     picard
@@ -234,6 +242,7 @@
     rustdesk-server
     xemu
     libsForQt5.spectacle
+    qpwgraph
 
     # Talk with monkeys
     skypeforlinux
@@ -286,12 +295,12 @@
     python3
 
     # Java
+    zulu17
     jdt-language-server
 
     # Others
     odin
     ocaml
-    jdk17
     vala
 
     electron
