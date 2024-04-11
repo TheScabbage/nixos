@@ -96,6 +96,8 @@
       qbittorrent
       rnote
       glava
+      qdirstat
+      davinci-resolve
     ];
   };
 
