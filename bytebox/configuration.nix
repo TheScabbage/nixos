@@ -163,6 +163,8 @@
   services.blueman.enable = true;
 
   virtualisation.docker.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "scabbage" ];
 
   # Meat and potatoes
   environment.systemPackages = with pkgs; [
