@@ -18,12 +18,19 @@
   boot.extraModulePackages = with config.boot.kernelPackages; [
     xone
   ];
+  
+  
+  # for bluetooth xbox gamepads
+  hardware.xpadneo.enable = true;
+  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
 
+  # for xbox wireless adapter
   hardware.xone.enable = true;
 
   # Fixes Finals crashing on startup
   boot.kernelParams = [ "clearcpuid=304" ];
 
+  boot.kernelModules = [ "uinput" ];
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
 
@@ -305,6 +312,9 @@
     odin
     ocaml
     vala
+
+    # Xbox gamepad support
+    xboxdrv
 
     electron
     xwayland
