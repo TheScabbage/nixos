@@ -129,6 +129,8 @@
     vid = "neovide";
     sd = "pushd ~/dotfiles && stow . && popd && echo \"Dotfiles updated.\" || echo \"Failed to update dotfiles.\"";
     fcd = "cd $(find * -type d | fzf)";
+    b = "cd -";
+    cr = "clear";
   };
 
   # OpenGL
