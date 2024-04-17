@@ -331,6 +331,14 @@
     neofetch
   ];
 
+fonts.packages = with pkgs; [
+  noto-fonts
+  fira-code
+  fira-code-symbols
+  jetbrains-mono
+  nerdfonts
+  helvetica-neue-lt-std
+];
 
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
