@@ -63,11 +63,12 @@
   # Keyboard
   services.xserver.xkb = {
     layout = "us";
-    variant = "dvorak";
+    #variant = "dvorak";
   };
 
   # Configure console keymap
-  console.keyMap = "dvorak";
+  #console.keyMap = "dvorak";
+  console.keyMap = "us";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
