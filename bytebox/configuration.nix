@@ -327,7 +327,6 @@
     SDL2
 
     # Vanity
-    nerdfonts
     neofetch
   ];
 
