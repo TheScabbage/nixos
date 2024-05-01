@@ -18,8 +18,7 @@
   boot.extraModulePackages = with config.boot.kernelPackages; [
     xone
   ];
-  
-  
+
   # for bluetooth xbox gamepads
   hardware.xpadneo.enable = true;
   boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
@@ -31,6 +30,7 @@
   boot.kernelParams = [ "clearcpuid=304" ];
 
   boot.kernelModules = [ "uinput" ];
+
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
 
