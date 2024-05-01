@@ -249,6 +249,7 @@
     vscode
     reaper
     bitwarden
+    thunderbird
     obsidian
     freecad
     libreoffice
