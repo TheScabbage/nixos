@@ -138,6 +138,7 @@
     b = "cd -";
     cr = "clear";
     tm = "~/.tmux/startup.sh";
+    z = "~/.bin/zig/zig12";
   };
 
   # OpenGL
