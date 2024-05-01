@@ -137,6 +137,7 @@
     fcd = "cd $(find * -type d | fzf)";
     b = "cd -";
     cr = "clear";
+    tm = "~/.tmux/startup.sh";
   };
 
   # OpenGL
