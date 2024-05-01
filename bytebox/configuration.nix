@@ -265,6 +265,7 @@
     qpwgraph
 
     # Talk with monkeys
+    vesktop
     skypeforlinux
     # signal being shit so using flatpak until its fixed
     #signal-desktop
