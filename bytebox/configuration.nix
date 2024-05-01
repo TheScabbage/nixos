@@ -257,7 +257,6 @@
     rhythmbox
     picard
     yt-dlp
-    jamesdsp
     libsForQt5.kcalc
     rustdesk
     rustdesk-server
