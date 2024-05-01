@@ -324,7 +324,8 @@
     ocaml
     vala
 
-    # Xbox gamepad support
+    # User space gamepad support cuz gulikit kk3
+    # doesnt work great with the kernel driver
     xboxdrv
 
     electron
