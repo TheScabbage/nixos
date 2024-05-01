@@ -232,6 +232,7 @@
     libsForQt5.kdeconnect-kde
     libsForQt5.kdialog
 
+    gnumake
     cmake
     gcc9
     glibc
