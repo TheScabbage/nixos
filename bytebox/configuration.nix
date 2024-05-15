@@ -170,6 +170,9 @@
     glib
     libevdev
     icu
+    glew
+    glfw
+    glfw2
   ];
 
   programs.gnupg.agent = {
