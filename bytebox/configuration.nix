@@ -347,7 +347,7 @@
     SDL2
 
     # Vanity
-    neofetch
+    fastfetch
   ];
 
 fonts.packages = with pkgs; [
