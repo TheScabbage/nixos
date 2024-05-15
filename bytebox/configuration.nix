@@ -274,8 +274,7 @@
 
     # Talk with monkeys
     skypeforlinux
-    # signal being shit so using flatpak until its fixed
-    #signal-desktop
+    signal-desktop
 
     (discord.override {
         # For some reason discord breaks now with OpenAsar.
