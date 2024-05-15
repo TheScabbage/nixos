@@ -294,6 +294,9 @@
     zls
     rustup
 
+    # Lobster
+    lobster
+
     # Go
     go
     pkg-config
