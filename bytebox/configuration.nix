@@ -7,6 +7,7 @@
     ];
 
   networking.hostName = "bytebox"; 
+  networking.nameservers = [ "9.9.9.9" "1.1.1.1" ];
 
   fileSystems."/mnt/brother-chungus" = {
       device = "/dev/disk/by-uuid/388c40a0-ef36-4d7c-b08f-6cd9af63b9c6";
