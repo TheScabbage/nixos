@@ -137,7 +137,7 @@
     fcd = "cd $(find * -type d | fzf)";
     b = "cd -";
     cr = "clear";
-    tm = "~/.tmux/startup.sh";
+    tm = "~/.config/tmux/startup.sh";
     z = "~/.bin/zig/zig12";
   };
 
