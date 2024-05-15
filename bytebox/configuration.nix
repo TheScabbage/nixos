@@ -209,6 +209,7 @@
     fzf
     tldr
     wezterm
+    alacritty
     unzip
     p7zip
     barrier
