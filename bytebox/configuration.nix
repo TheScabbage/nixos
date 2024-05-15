@@ -139,6 +139,9 @@
     cr = "clear";
     tm = "~/.config/tmux/startup.sh";
     z = "~/.bin/zig/zig12";
+    "..." = "cd ../..";
+    "...." = "cd ../../..";
+    "....." = "cd ../../../..";
   };
 
   # OpenGL
