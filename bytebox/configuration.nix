@@ -298,10 +298,6 @@
     go
     pkg-config
 
-    # JavaScript
-    nodejs_21
-    typescript
-
     # Lua
     lua
     lua54Packages.luarocks
