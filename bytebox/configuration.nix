@@ -271,6 +271,7 @@
     xemu
     libsForQt5.spectacle
     qpwgraph
+    gparted
 
     # Talk with monkeys
     skypeforlinux
