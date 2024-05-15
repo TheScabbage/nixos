@@ -237,6 +237,7 @@
     ollama
     libsForQt5.kdeconnect-kde
     libsForQt5.kdialog
+    evemu
 
     gnumake
     cmake
