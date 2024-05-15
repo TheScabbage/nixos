@@ -51,11 +51,12 @@
   # Desktop Environment
   services.xserver.enable = true;
   services.xserver = {
-    displayManager.defaultSession = "plasmawayland";
     videoDrivers = [ "amdgpu" ];
-    displayManager.sddm.enable = true;
     desktopManager.plasma5.enable = true;
   };
+
+  services.displayManager.sddm.enable = true;
+  services.displayManager.defaultSession = "plasmawayland";
 
   programs.dconf.enable = true;
 
