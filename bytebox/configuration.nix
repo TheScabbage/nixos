@@ -96,7 +96,7 @@
     shell = pkgs.fish;
     isNormalUser = true;
     description = "scabbage";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "docker" "uinput" ];
     packages = with pkgs; [
       chromium
       kate
