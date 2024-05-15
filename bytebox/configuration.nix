@@ -221,7 +221,7 @@
     gcc
     tmux
     openssl
-    wine64
+    wine64Packages.stagingFull
     evtest
     gh
     dig
