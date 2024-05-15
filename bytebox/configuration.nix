@@ -16,9 +16,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.extraModulePackages = with config.boot.kernelPackages; [
-    xone
-  ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [ xone ];
 
   # for bluetooth xbox gamepads
   hardware.xpadneo.enable = true;
