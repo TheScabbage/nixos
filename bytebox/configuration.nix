@@ -210,6 +210,7 @@
     tldr
     wezterm
     alacritty
+    kitty
     unzip
     p7zip
     barrier
