@@ -90,6 +90,7 @@
   };
 
   programs.fish.enable = true;
+  environment.variables.YDOTOOL_SOCKET = "/tmp/ydotools";
 
   # User account
   users.users.scabbage = {
@@ -240,6 +241,7 @@
     libsForQt5.kdeconnect-kde
     libsForQt5.kdialog
     evemu
+    ydotool
 
     gnumake
     cmake
