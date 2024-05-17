@@ -128,7 +128,6 @@
     try = "nix-shell -p ";
     search = "nix search nixpkgs ";
     vi  = "nvim";
-    vim = "nvim";
     yeet = "git push";
     yoink = "git pull";
     oc = "find . | entr -r ";
