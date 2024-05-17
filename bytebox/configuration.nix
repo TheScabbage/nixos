@@ -191,8 +191,14 @@
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "scabbage" ];
 
+  environment.systemPackages = with pkgs;
+  let
+    stat-rstudio = rstudioWrapper.override {
+      packages = with rPackages; [ tidyverse snakecase dplyr magrittr ggpubr ];
+    };
+  in
   # Meat and potatoes
-  environment.systemPackages = with pkgs; [
+  [
     # CLI Tools
     neovim
     ripgrep
@@ -277,6 +283,7 @@
     libsForQt5.spectacle
     qpwgraph
     gparted
+    stat-rstudio
 
     # Talk with monkeys
     skypeforlinux
