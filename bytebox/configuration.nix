@@ -200,6 +200,7 @@
   # Meat and potatoes
   [
     # CLI Tools
+    vim
     neovim
     ripgrep
     btop
