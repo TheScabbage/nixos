@@ -239,6 +239,7 @@
     conda
     steam
     steamPackages.steamcmd
+    lutris
     stow
     lazygit
     cloc
