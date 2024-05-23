@@ -350,6 +350,7 @@
     electron
     xwayland
     xwaylandvideobridge
+    xdg-desktop-portal
 
     freetype
     sqlite
