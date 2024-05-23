@@ -142,6 +142,7 @@
     "..." = "cd ../..";
     "...." = "cd ../../..";
     "....." = "cd ../../../..";
+    yz = "yazi";
   };
 
   # OpenGL
@@ -209,7 +210,7 @@
     git-lfs
     pijul
     bat
-    lf
+    yazi
     eza
     zellij
     zoxide
