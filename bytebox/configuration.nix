@@ -262,6 +262,7 @@
     ilspycmd
     gdb
     xorg.libX11
+    xorg.libX11.dev
 
     # phat GUI Apps
     neovide
