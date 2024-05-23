@@ -249,6 +249,8 @@
     libsForQt5.kdialog
     evemu
     ydotool
+    mlocate
+    busybox
 
     gnumake
     cmake
