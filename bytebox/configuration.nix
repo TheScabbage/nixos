@@ -121,7 +121,7 @@
 
   # Shell aliases
   programs.fish.shellAliases = {
-    l = "ls -alh";
+    l = "eza -alh";
     lg = "lazygit";
     cfg = "vi $HOME/.config/nixos/bytebox/configuration.nix";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/.config/nixos/bytebox/configuration.nix";
