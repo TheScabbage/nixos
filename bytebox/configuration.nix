@@ -341,6 +341,7 @@
     icu
     powershell
     vimPlugins.omnisharp-extended-lsp-nvim
+    dotnetPackages.Nuget
 
     # Arduino
     arduino
