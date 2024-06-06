@@ -293,6 +293,8 @@
     stat-rstudio
     libsForQt5.kdeconnect-kde
     libsForQt5.kdialog
+    qimgv
+    android-studio
 
     # Talk with monkeys
     skypeforlinux
