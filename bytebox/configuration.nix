@@ -169,8 +169,6 @@
     openssl
     openssl.dev
     udev
-    glibc
-    glib
     libevdev
     icu
     glew
@@ -249,6 +247,7 @@
     exercism
     cups
     ollama
+
     evemu
     ydotool
     mlocate
@@ -258,8 +257,6 @@
     gnumake
     cmake
     gcc9
-    glibc
-    glib
     libllvm
     ilspycmd
     gdb
