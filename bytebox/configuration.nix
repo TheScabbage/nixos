@@ -140,6 +140,7 @@
     cr = "clear";
     tm = "~/.config/tmux/startup.sh";
     z = "~/.bin/zig/zig12";
+    ndkb = "~/Android/Sdk/ndk/ndk-build";
     "..." = "cd ../..";
     "...." = "cd ../../..";
     "....." = "cd ../../../..";
