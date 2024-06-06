@@ -315,7 +315,13 @@
     # Zig
     zig
     zls
+
+    # Rust
+    cargo
     rustup
+    cargo-cross
+    libunwind
+    libclang
 
     # Lobster
     lobster
