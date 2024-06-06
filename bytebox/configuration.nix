@@ -213,6 +213,7 @@
     pijul
     bat
     yazi
+    mpv
     eza
     zellij
     zoxide
