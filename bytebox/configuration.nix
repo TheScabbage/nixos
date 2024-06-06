@@ -248,8 +248,6 @@
     exercism
     cups
     ollama
-    libsForQt5.kdeconnect-kde
-    libsForQt5.kdialog
     evemu
     ydotool
     mlocate
@@ -292,6 +290,8 @@
     qpwgraph
     gparted
     stat-rstudio
+    libsForQt5.kdeconnect-kde
+    libsForQt5.kdialog
 
     # Talk with monkeys
     skypeforlinux
