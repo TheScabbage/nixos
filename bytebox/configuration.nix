@@ -254,6 +254,7 @@
     ydotool
     mlocate
     busybox
+    wlr-randr
 
     gnumake
     cmake
