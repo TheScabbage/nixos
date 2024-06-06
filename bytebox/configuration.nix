@@ -349,7 +349,7 @@
     arduino-language-server
 
     # Python
-    python3
+    python310
 
     # Java
     zulu17
