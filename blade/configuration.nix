@@ -110,7 +110,7 @@
     lg = "lazygit";
     cr = "clear";
     sd = "pwd > ~/.local/jmp/location.txt";
-    jd = "JMP_DIR=`cat ~/.local/jmp/location.txt` && cd $JMP_DIR";
+    jd = "JMP_DIR=`cat ~/.local/jmp/location.txt` && cd $JMP_DIR && pwd";
   };
 
  
