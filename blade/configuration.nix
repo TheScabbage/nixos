@@ -165,7 +165,7 @@
 
   # Shell aliases
   programs.bash.shellAliases = {
-    l = "ls -alh";
+    l = "eza -alh";
     cfg = "nvim $HOME/nixos/blade/configuration.nix";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/nixos/blade/configuration.nix";
     try = "nix-shell -p ";
@@ -204,6 +204,12 @@
     bash
     curl
     unzip
+    bat # better cat
+    eza # better ls
+    fzf
+    yazi
+    tldr
+    entr
     yabridge
     yabridgectl
     wine-staging
