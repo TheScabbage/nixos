@@ -281,8 +281,9 @@
 
 
 
-  environment.variables = rec {
+  environment.variables = {
     MOZ_USE_XINPUT2="1";
+    EDITOR="nvim";
   };
  
   # Razer Support
