@@ -294,6 +294,16 @@
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
  
+  # Fonts
+  fonts.packages = with pkgs; [
+    noto-fonts
+    fira-code
+    fira-code-symbols
+    jetbrains-mono
+    nerdfonts
+    helvetica-neue-lt-std
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
