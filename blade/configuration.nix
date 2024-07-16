@@ -261,6 +261,8 @@
 
     # Touchpad
     touchegg
+
+    openrazer-daemon
  
     # VM
     qemu
