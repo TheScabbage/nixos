@@ -77,6 +77,12 @@
     #media-session.enable = true;
   };
 
+  # Stop OOM killer from eating my shit
+  swapDevices = [{
+    device = "/swapfile";
+    size = 16 * 1024;
+  }];
+
   # NVIDIA 
   # Make sure opengl is enabled
   hardware.graphics.enable = true;
