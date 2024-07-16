@@ -204,6 +204,7 @@
     tmux
     kitty
     git
+    git-lfs
     pijul
     wget
     bash
@@ -214,7 +215,23 @@
     fzf
     yazi
     tldr
+    gnumake
+    gcc
+    libgcc
+    libclang
+    cmake
+    bison
+    zoxide
+    ninja
+    qpwgraph
+    ddrescue
+    dig
+    dos2unix
+    qemu_full
+    ascii
     entr
+
+
     yabridge
     yabridgectl
     wine-staging
@@ -235,15 +252,21 @@
     nodejs_22
     nodePackages.typescript-language-server
     tree-sitter
+    flex
+    yacc
     pkg-config
     cmake
     libgcc
     gcc9
     python3
+    python311Packages.torch
     libGL
     libglibutil
     btop
     wl-clipboard
+    tinycc
+    qbe
+    fusuma
 
     # Apps
     neovide
