@@ -204,6 +204,7 @@
     tmux
     kitty
     git
+    pijul
     wget
     bash
     curl
