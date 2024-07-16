@@ -272,6 +272,7 @@
     neovide
     polychromatic
     skypeforlinux
+    signal-desktop
     discord
     vscode
     reaper
