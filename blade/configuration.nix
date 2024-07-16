@@ -166,6 +166,8 @@
   # Shell aliases
   programs.bash.shellAliases = {
     l = "eza -alh";
+    cd = "pushd . > /dev/null && z ";
+    b = "popd > /dev/null";
     cfg = "nvim $HOME/nixos/blade/configuration.nix";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/nixos/blade/configuration.nix";
     try = "nix-shell -p ";
