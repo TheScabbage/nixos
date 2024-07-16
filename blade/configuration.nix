@@ -181,6 +181,7 @@
     sd = "pwd > ~/.local/jmp/location.txt";
     jd = "JMP_DIR=`cat ~/.local/jmp/location.txt` && cd $JMP_DIR && pwd";
     nvo = "~/projects/nvidia-offload/nvidia-offload.sh ";
+    pl = "pijul";
   };
 
  
