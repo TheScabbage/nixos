@@ -282,6 +282,16 @@
     steam-run
     gparted
     prismlauncher
+    glava
+    jamesdsp
+    xournalpp
+    gimp
+    peek
+    kooha
+    obs-studio
+    qalculate-qt
+    unityhub
+
     # CSharp
     omnisharp-roslyn
     dotnet-sdk_8
