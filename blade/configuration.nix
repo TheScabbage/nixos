@@ -175,6 +175,7 @@
     ns = "nix-shell";
     vi = "nvim ";
     vd = "WINIT_UNIX_BACKEND=x11 neovide ";
+    vw = "WINIT_UNIX_BACKEND=x11 neovide . &";
     lg = "lazygit";
     cr = "clear";
     sd = "pwd > ~/.local/jmp/location.txt";
