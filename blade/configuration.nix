@@ -254,6 +254,9 @@
     steam-run
     gparted
     prismlauncher
+    # Go
+    go
+    gopls
 
     # Drivers n shit
     ntfs3g
