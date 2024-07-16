@@ -258,6 +258,9 @@
     go
     gopls
 
+    # Haskell
+    ghc
+
     # Drivers n shit
     ntfs3g
     exfatprogs
