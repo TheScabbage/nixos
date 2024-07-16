@@ -282,6 +282,11 @@
     steam-run
     gparted
     prismlauncher
+    # CSharp
+    omnisharp-roslyn
+    dotnet-sdk_8
+    dotnet-runtime_8
+
     # Go
     go
     gopls
