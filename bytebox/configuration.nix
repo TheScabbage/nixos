@@ -203,18 +203,16 @@
       packages = with rPackages; [ tidyverse snakecase dplyr magrittr ggpubr ];
     };
   in
-  # Meat and potatoes
+  ## System Packages
   [
-    # CLI Tools
+    ##  CLI Tools
+
     vim
     neovim
     ripgrep
     btop
     wget
     curl
-    git
-    git-lfs
-    pijul
     bat
     yazi
     mpv
@@ -223,12 +221,8 @@
     zoxide
     fzf
     tldr
-    wezterm
-    alacritty
-    kitty
     unzip
     p7zip
-    barrier
     gnupg
     pinentry
     docker-compose
@@ -238,27 +232,33 @@
     gcc
     tmux
     openssl
-    wine64Packages.stagingFull
     evtest
     gh
     dig
     gamemode
     conda
-    steam
-    steamPackages.steamcmd
-    lutris
     stow
     lazygit
     cloc
     exercism
-    cups
     ollama
-
+    tree-sitter
     evemu
     ydotool
     mlocate
     busybox
     wlr-randr
+
+    # Terminals
+    wezterm
+    alacritty
+    kitty
+
+    # Source control
+    git
+    git-lfs
+    mercurial
+    pijul
 
     gnumake
     cmake
@@ -269,7 +269,7 @@
     xorg.libX11
     xorg.libX11.dev
 
-    # phat GUI Apps
+    # Phat GUI Apps
     neovide
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
@@ -298,23 +298,25 @@
     libsForQt5.kdialog
     qimgv
     android-studio
+    barrier
+    wine64Packages.stagingFull
+    steam
+    steamPackages.steamcmd
+    lutris
+    cups
 
     # Talk with monkeys
     skypeforlinux
     signal-desktop
+    discord
 
-    (discord.override {
-        # For some reason discord breaks now with OpenAsar.
-        # Disabled until issue is fixed.
-        # withOpenASAR = true;
-        withVencord = true;
-    })
     ( vesktop.override { withSystemVencord = false; } )
 
     # Allow neovim -> system clipboard
     xclip
     wl-clipboard
 
+    ## Programming
     # Zig
     zig
     zls
@@ -353,16 +355,18 @@
     arduino-language-server
 
     # Python
-    python310
+    python312
+    python312Packages.pip
 
     # Java
-    zulu17
+    jdk
     jdt-language-server
 
     # Others
     odin
     ocaml
     vala
+    nodejs_22
 
     # User space gamepad support cuz gulikit kk3
     # doesnt work great with the kernel driver
