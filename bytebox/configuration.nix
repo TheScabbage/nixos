@@ -159,6 +159,7 @@
 
   # OpenSSH
   services.openssh.enable = true;
+  services.openssh.settings.PasswordAuthentication = false;
 
   # Flatpak
   services.flatpak.enable = true;
