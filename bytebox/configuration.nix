@@ -112,6 +112,7 @@
       glava
       qdirstat
       davinci-resolve
+      verilator
     ];
   };
 
