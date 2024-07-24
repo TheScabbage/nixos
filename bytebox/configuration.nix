@@ -139,8 +139,8 @@
     ns = "nix-shell ";
     nsp = "nix-shell --pure ";
     vid = "neovide";
-    sd = "pushd ~/dotfiles && stow . && popd && echo \"Dotfiles updated.\" || echo \"Failed to update dotfiles.\"";
     fcd = "cd $(find * -type d | fzf)";
+    udot = "pushd ~/dotfiles && stow . && popd && echo \"Dotfiles updated.\" || echo \"Failed to update dotfiles.\"";
     b = "cd -";
     cr = "clear";
     tm = "~/.config/tmux/startup.sh";
