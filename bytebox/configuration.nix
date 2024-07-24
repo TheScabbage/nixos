@@ -252,6 +252,10 @@
     mlocate
     busybox
     wlr-randr
+    wmctrl
+    trashy
+    desktop-file-utils
+
     # Man pages
     man-pages
     man-pages-posix
