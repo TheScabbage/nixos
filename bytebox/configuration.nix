@@ -197,6 +197,9 @@
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "scabbage" ];
 
+  # Enable manpages
+  documentation.dev.enable = true;
+
   environment.systemPackages = with pkgs;
   let
     stat-rstudio = rstudioWrapper.override {
