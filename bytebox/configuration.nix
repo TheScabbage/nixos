@@ -132,7 +132,7 @@
     try = "nix-shell -p ";
     search = "nix search nixpkgs ";
     vi  = "nvim";
-    vw  = "neovide . &";
+    # vw  = "neovide . &";
     yeet = "git push";
     yoink = "git pull";
     oc = "find . | entr -r ";
