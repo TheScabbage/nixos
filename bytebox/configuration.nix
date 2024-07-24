@@ -252,6 +252,9 @@
     mlocate
     busybox
     wlr-randr
+    # Man pages
+    man-pages
+    man-pages-posix
 
     # Terminals
     wezterm
