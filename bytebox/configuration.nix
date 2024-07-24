@@ -257,6 +257,7 @@
     wmctrl
     trashy
     desktop-file-utils
+    pandoc
 
     # Man pages
     man-pages
@@ -317,6 +318,8 @@
     steamPackages.steamcmd
     lutris
     cups
+    alvr
+    graphviz
 
     # Talk with monkeys
     skypeforlinux
