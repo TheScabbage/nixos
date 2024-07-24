@@ -212,6 +212,7 @@
 
     vim
     neovim
+    neovim-remote
     ripgrep
     btop
     wget
