@@ -259,6 +259,7 @@
     trashy
     desktop-file-utils
     pandoc
+    inotify-tools
 
     # Man pages
     man-pages
