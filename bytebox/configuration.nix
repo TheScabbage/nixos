@@ -318,6 +318,8 @@
     cups
     alvr
     graphviz
+    logisim
+    logisim-evolution
 
     # Music/Audio
     reaper
