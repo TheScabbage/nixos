@@ -145,8 +145,9 @@
     fcd = "cd $(fzf --walker=dir,follow,hidden)";
     b = "cd -";
     cr = "clear";
-    tm = "~/.config/tmux/startup.sh";
     z = "~/.bin/zig/zig12";
+    mtm = "~/.config/tmux/startup.sh";
+    tma = "tmux attach";
     ndkb = "~/Android/Sdk/ndk/ndk-build";
     "..." = "cd ../..";
     "...." = "cd ../../..";
