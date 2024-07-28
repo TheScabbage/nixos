@@ -396,10 +396,13 @@
     # doesnt work great with the kernel driver
     xboxdrv
 
+    # DE Shit
     electron
     xwayland
     xwaylandvideobridge
     xdg-desktop-portal
+    swayidle
+    swaylock
 
     freetype
     sqlite
