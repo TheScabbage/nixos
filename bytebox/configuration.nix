@@ -292,16 +292,12 @@
       })
     unityhub
     vscode
-    reaper
     bitwarden
     thunderbird
     obsidian
     freecad
     libreoffice
     peek
-    rhythmbox
-    picard
-    yt-dlp
     libsForQt5.kcalc
     rustdesk
     rustdesk-server
@@ -322,6 +318,14 @@
     cups
     alvr
     graphviz
+
+    # Music/Audio
+    reaper
+    distrho
+    audacity
+    picard
+    rhythmbox
+    yt-dlp
 
     # Talk with monkeys
     skypeforlinux
