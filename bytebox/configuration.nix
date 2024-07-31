@@ -130,7 +130,7 @@
   programs.fish.shellAliases = {
     l = "eza -alh";
     lg = "lazygit";
-    cfg = "vi $HOME/.config/nixos/bytebox/configuration.nix";
+    cfg = "pushd . && cd $HOME/.config/nixos/bytebox/ && vi ./configuration.nix && popd";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/.config/nixos/bytebox/configuration.nix";
     try = "nix-shell -p ";
     search = "nix search nixpkgs ";
