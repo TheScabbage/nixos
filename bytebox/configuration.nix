@@ -28,6 +28,9 @@
   # for xbox wireless adapter
   hardware.xone.enable = true;
 
+  # use steam-hardware module for KK3 nintendo switch mode
+  hardware.steam-hardware.enable = true;
+
   # Fixes Finals crashing on startup
   boot.kernelParams = [ "clearcpuid=304" ];
 
