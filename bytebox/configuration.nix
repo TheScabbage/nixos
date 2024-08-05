@@ -313,6 +313,7 @@
     libsForQt5.kdialog
     qimgv
     android-studio
+    android-udev-rules
     barrier
     wine64Packages.stagingFull
     steam
