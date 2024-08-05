@@ -390,6 +390,10 @@
     jdk
     jdt-language-server
 
+    # PHP
+    php83
+    php83Packages.composer
+
     # Others
     odin
     ocaml
