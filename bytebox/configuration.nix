@@ -300,7 +300,7 @@
     obsidian
     freecad
     libreoffice
-    peek
+    kooha
     libsForQt5.kcalc
     rustdesk
     rustdesk-server
