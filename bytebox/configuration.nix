@@ -202,6 +202,8 @@
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "scabbage" ];
 
+  services.locate.enable = true;
+
   # Enable manpages
   documentation.dev.enable = true;
 
@@ -254,7 +256,6 @@
     tree-sitter
     evemu
     ydotool
-    mlocate
     busybox
     wlr-randr
     wmctrl
