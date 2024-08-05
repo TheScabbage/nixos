@@ -228,6 +228,7 @@
     yazi
     mpv
     eza
+    fd
     zellij
     zoxide
     fzf
