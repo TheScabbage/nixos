@@ -195,6 +195,7 @@
     glew
     glfw
     glfw2
+    libllvm
   ];
 
   programs.gnupg.agent = {
