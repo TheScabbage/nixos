@@ -349,7 +349,9 @@
     # Talk with monkeys
     skypeforlinux
     signal-desktop
-    discord
+    (discord.override {
+      withOpenASAR = true;
+    })
 
     ( vesktop.override { withSystemVencord = false; } )
 
