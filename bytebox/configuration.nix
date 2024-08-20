@@ -418,6 +418,7 @@
     ocaml
     vala
     nodejs_22
+    ghc
 
     # User space gamepad support cuz gulikit kk3
     # doesnt work great with the kernel driver
