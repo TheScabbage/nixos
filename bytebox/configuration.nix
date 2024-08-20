@@ -399,8 +399,11 @@
     arduino-language-server
 
     # Python
-    python312
-    python312Packages.pip
+    (python312.withPackages (p: with p; [
+        pip
+        torch
+        diffusers
+    ]))
 
     # Java
     jdk
