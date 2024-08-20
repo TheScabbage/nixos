@@ -149,8 +149,6 @@
     # vw  = "neovide . &";
     sd = "pwd > ~/.local/share/jumpdir";
     jd = "cd $(cat ~/.local/share/jumpdir)";
-    yeet = "git push";
-    yoink = "git pull";
     oc = "find . | entr -r ";
     ns = "nix-shell ";
     nsp = "nix-shell --pure ";
