@@ -354,6 +354,7 @@
     })
 
     ( vesktop.override { withSystemVencord = false; } )
+    nheko
 
     # Allow neovim -> system clipboard
     xclip
