@@ -113,7 +113,7 @@
     shell = pkgs.fish;
     isNormalUser = true;
     description = "scabbage";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "docker" "uinput" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "docker" "uinput" "wireshark"];
     packages = with pkgs; [
       chromium
       kate
@@ -218,6 +218,7 @@
   # Enable manpages
   documentation.dev.enable = true;
 
+  programs.wireshark.enable = true;
   environment.systemPackages = with pkgs;
   let
     stat-rstudio = rstudioWrapper.override {
