@@ -68,6 +68,8 @@
     videoDrivers = [ "amdgpu" ];
     desktopManager.plasma5.enable = true;
   };
+  xdg.portal.enable = true;
+  xdg.portal.xdgOpenUsePortal = true;
 
   services.displayManager.sddm.enable = true;
   services.displayManager.defaultSession = "plasmawayland";
