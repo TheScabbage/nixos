@@ -438,6 +438,9 @@
     xml2
     SDL2
 
+    # printing
+    brlaser
+
     # Vanity
     fastfetch
   ];
