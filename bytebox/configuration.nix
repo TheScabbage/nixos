@@ -149,6 +149,7 @@
     # vw  = "neovide . &";
     sd = "pwd > ~/.local/share/jumpdir";
     jd = "cd $(cat ~/.local/share/jumpdir)";
+    clone = "git clone --recursive ";
     oc = "find . | entr -r ";
     ns = "nix-shell ";
     nsp = "nix-shell --pure ";
