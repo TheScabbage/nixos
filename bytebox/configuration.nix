@@ -260,6 +260,7 @@
     gcc
     tmux
     openssl
+    pkg-config
     evtest
     gh
     dig
@@ -339,7 +340,6 @@
     cups
     alvr
     graphviz
-    logisim
     logisim-evolution
 
     # Music/Audio
@@ -381,7 +381,6 @@
 
     # Go
     go
-    pkg-config
 
     # Lua
     lua
