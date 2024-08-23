@@ -19,6 +19,9 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.configurationName = "Nix";
+  boot.loader.grub.extraGrubInstallArgs = [ "--bootloader-id=Nix" ];
+
   boot.extraModulePackages = with config.boot.kernelPackages; [
     xone 
     v4l2loopback 
