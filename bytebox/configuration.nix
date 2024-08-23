@@ -159,14 +159,15 @@
     vid = "neovide";
     udot = "pushd ~/dotfiles && stow . && popd && echo \"Dotfiles updated.\" || echo \"Failed to update dotfiles.\"";
     fcd = "cd $(fzf --walker=dir,follow,hidden)";
-    b = "cd -";
     cr = "clear";
     mtm = "~/.config/tmux/startup.sh";
     tma = "tmux attach";
     ndkb = "~/Android/Sdk/ndk/ndk-build";
+    u = "cd ..";
     "..." = "cd ../..";
     "...." = "cd ../../..";
     "....." = "cd ../../../..";
+    b = "cd -";
     yz = "yazi";
   };
 
