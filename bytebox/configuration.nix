@@ -22,19 +22,11 @@
   boot.loader.grub.configurationName = "Nix";
   boot.loader.grub.extraGrubInstallArgs = [ "--bootloader-id=Nix" ];
 
-  boot.extraModulePackages = with config.boot.kernelPackages; [
-    xone 
-    v4l2loopback 
-  ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [ xone ];
 
   # for bluetooth xbox gamepads
   hardware.xpadneo.enable = true;
-
-  boot.extraModprobeConfig = ''
-    options bluetooth disable_ertm=1 v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
-  '';
-
-  security.polkit.enable = true;
+  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
 
   # for xbox wireless adapter
   hardware.xone.enable = true;
@@ -45,7 +37,7 @@
   # Fixes Finals crashing on startup
   boot.kernelParams = [ "clearcpuid=304" ];
 
-  boot.kernelModules = [ "uinput" "v4l2loopback" ];
+  boot.kernelModules = [ "uinput" ];
 
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
@@ -122,7 +114,6 @@
       kate
       gimp
       obs-studio
-      v4l-utils
       vlc
       prismlauncher
       prusa-slicer
