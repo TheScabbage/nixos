@@ -285,6 +285,7 @@
     # Source control
     git
     git-lfs
+    git-doc
     mercurial
     pijul
 
