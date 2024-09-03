@@ -101,14 +101,18 @@
   };
 
   programs.fish.enable = true;
-  environment.variables.YDOTOOL_SOCKET = "/tmp/ydotools";
+  environment.variables.YDOTOOL_SOCKET    = "/tmp/ydotools";
+  environment.variables.GSETTINGS_BACKEND = "keyfile";
+
+  virtualisation.libvirtd.enable = true;
+
 
   # User account
   users.users.scabbage = {
     shell = pkgs.fish;
     isNormalUser = true;
     description = "scabbage";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "docker" "uinput" "wireshark"];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "dialout" "docker" "uinput" "wireshark"];
     packages = with pkgs; [
       chromium
       kate
@@ -272,6 +276,8 @@
     desktop-file-utils
     pandoc
     inotify-tools
+    bzip2
+    e2fsprogs
 
     # Man pages
     man-pages
@@ -333,6 +339,8 @@
     alvr
     graphviz
     logisim-evolution
+    qemu_full
+    virt-manager
 
     # Music/Audio
     reaper
