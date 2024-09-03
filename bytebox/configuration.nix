@@ -282,6 +282,7 @@
     # Man pages
     man-pages
     man-pages-posix
+    gollum
 
     # Terminals
     wezterm
