@@ -144,7 +144,7 @@
     try = "nix-shell -p ";
     search = "nix search nixpkgs ";
     vi  = "nvim";
-    # vw  = "neovide . &";
+    vw  = "neovide . &";
     sd = "pwd > ~/.local/share/jumpdir";
     jd = "cd $(cat ~/.local/share/jumpdir)";
     clone = "git clone --recursive ";
