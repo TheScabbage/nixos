@@ -381,6 +381,7 @@
 
     # Go
     go
+    gopls
 
     # Lua
     lua
