@@ -106,7 +106,6 @@
 
   virtualisation.libvirtd.enable = true;
 
-
   # User account
   users.users.scabbage = {
     shell = pkgs.fish;
