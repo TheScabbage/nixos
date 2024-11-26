@@ -311,6 +311,7 @@
     mqttx
     rocmPackages.clr.icd
     gmsh
+    zip
 
     # Terminals
     wezterm
