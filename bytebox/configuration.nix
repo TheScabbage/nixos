@@ -101,11 +101,12 @@
     pulse.enable = true;
   };
 
-  programs.fish.enable = true;
   environment.variables.YDOTOOL_SOCKET    = "/tmp/ydotools";
   environment.variables.GSETTINGS_BACKEND = "keyfile";
 
   virtualisation.libvirtd.enable = true;
+
+  programs.fish.enable = true;
 
   # User account
   users.users.scabbage = {
