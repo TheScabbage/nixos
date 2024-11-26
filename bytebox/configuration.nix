@@ -418,6 +418,7 @@
     cargo
     rustup
     cargo-cross
+    rust-analyzer
     libunwind
     libclang
 
@@ -436,10 +437,12 @@
     omnisharp-roslyn
     dotnet-sdk_8
     dotnet-runtime_8
+    dotnet-runtime
     icu
     powershell
     vimPlugins.omnisharp-extended-lsp-nvim
     dotnetPackages.Nuget
+    mono
 
     # Arduino
     arduino
@@ -447,11 +450,13 @@
     arduino-cli
     arduino-language-server
 
+    # ESP32
+    esptool
+
     # Python
-    (python312.withPackages (p: with p; [
+    (python311.withPackages (p: with p; [
         pip
-        torch
-        diffusers
+        pyserial
     ]))
 
     # Java
