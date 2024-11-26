@@ -338,8 +338,8 @@
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
+    floorp
     unityhub
-    vscode
     bitwarden
     thunderbird
     obsidian
@@ -360,9 +360,9 @@
     android-studio
     android-udev-rules
     barrier
-    wine64Packages.stagingFull
-    steam
-    steamPackages.steamcmd
+    # wine64Packages.stagingFull
+    winePackages.stagingFull
+    winetricks
     lutris
     cups
     alvr
@@ -370,6 +370,21 @@
     logisim-evolution
     qemu_full
     virt-manager
+    kiwix
+    ventoy-full
+    platformio
+    parsec-bin
+    usbimager
+    rpi-imager
+    rpcs3
+
+    steam
+    steamPackages.steamcmd
+    protonplus
+    (import ./modules/proton-ge.nix {
+      inherit stdenv fetchurl;
+    })
+    xemu
 
     # Music/Audio
     reaper
@@ -385,6 +400,7 @@
     (discord.override {
       withOpenASAR = true;
     })
+    webcord
 
     ( vesktop.override { withSystemVencord = false; } )
     nheko
