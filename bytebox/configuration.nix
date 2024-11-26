@@ -312,6 +312,7 @@
     rocmPackages.clr.icd
     gmsh
     zip
+    appimage-run
 
     # Terminals
     wezterm
