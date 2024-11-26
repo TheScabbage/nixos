@@ -306,11 +306,6 @@
     inotify-tools
     bzip2
     e2fsprogs
-
-    # Man pages
-    man-pages
-    man-pages-posix
-    gollum
     cairo
     mqttx
     rocmPackages.clr.icd
