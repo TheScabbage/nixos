@@ -279,6 +279,8 @@
     dos2unix
     entr
     gcc
+    wxGTK32
+    tbb
     tmux
     openssl
     pkg-config
@@ -309,6 +311,10 @@
     man-pages
     man-pages-posix
     gollum
+    cairo
+    mqttx
+    rocmPackages.clr.icd
+    gmsh
 
     # Terminals
     wezterm
