@@ -92,6 +92,7 @@
 
   # Enable sound with pipewire.
   sound.enable = true;
+  nixpkgs.config.pulseaudio = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
