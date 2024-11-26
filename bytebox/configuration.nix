@@ -325,6 +325,7 @@
 
     gnumake
     cmake
+    just
     gcc9
     libllvm
     ilspycmd
