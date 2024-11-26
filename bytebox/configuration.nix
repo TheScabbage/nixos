@@ -142,6 +142,7 @@
     lg = "lazygit";
     cfg = "pushd . && cd $HOME/.config/nixos/bytebox/ && vi ./configuration.nix && popd";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/.config/nixos/bytebox/configuration.nix";
+    ndg = "sudo nix-collect-garbage --delete-older-than 7d";
     try = "nix-shell -p ";
     search = "nix search nixpkgs ";
     vi  = "nvim";
