@@ -197,6 +197,16 @@
     glfw
     glfw2
     libllvm
+    # used for embedded shit
+    pixman
+    libgcrypt
+    libslirp
+    glib
+    gtk3
+    cairo
+    gdk-pixbuf
+    vte
+    xorg.libX11
   ];
 
   programs.gnupg.agent = {
