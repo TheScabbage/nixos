@@ -167,8 +167,9 @@
   # Shell aliases
   programs.bash.shellAliases = {
     l = "eza -alh";
-    cd = "pushd . > /dev/null && z ";
-    b = "popd > /dev/null";
+    cd = "z ";
+    cds = "pushd . > /dev/null && z "; # cd, save the last directory
+    b = "popd > /dev/null || popd -n"; # go back to the last dir in the stack
     cdi = "zi ";
     cfg = "nvim $HOME/nixos/blade/configuration.nix";
     nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/nixos/blade/configuration.nix";
@@ -202,6 +203,7 @@
 
     # Tools
     neovim
+    neovim-remote
     tmux
     kitty
     git
@@ -231,7 +233,7 @@
     qemu_full
     ascii
     entr
-
+    wmctrl
 
     yabridge
     yabridgectl
@@ -259,8 +261,10 @@
     cmake
     libgcc
     gcc9
-    python3
-    python311Packages.torch
+    python312
+    python312Packages.torch
+    python312Packages.hexdump
+    python312Packages.pyserial
     libGL
     libglibutil
     btop
@@ -268,15 +272,22 @@
     tinycc
     qbe
     fusuma
+    (fortune.override {
+      withOffensive = true;
+    })
+    usbutils
 
     # Apps
     neovide
     polychromatic
     skypeforlinux
     signal-desktop
-    discord
+    (discord.override {
+      withVencord = true;
+    })
     vscode
     reaper
+    distrho
     freecad
     prusa-slicer
     inkscape
@@ -293,6 +304,7 @@
     obs-studio
     qalculate-qt
     unityhub
+    vlc
 
     # CSharp
     omnisharp-roslyn
@@ -303,12 +315,19 @@
     go
     gopls
 
+    arduino
+    arduino-cli
+
     # Haskell
     ghc
 
     # Drivers n shit
     ntfs3g
     exfatprogs
+
+    # Prowl dependencies
+    assimp
+    imagemagick
 
     # Touchpad
     touchegg
