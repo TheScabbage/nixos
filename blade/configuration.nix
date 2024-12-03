@@ -9,7 +9,8 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
- 
+  
+  boot.loader.grub.useOSProber = true;
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -139,7 +140,7 @@
   users.users.scabbage = {
     isNormalUser = true;
     description = "Scabbage";
-    extraGroups = [ "networkmanager" "wheel" "openrazer" "docker" "audio" "plugdev" "fuse"];
+    extraGroups = [ "networkmanager" "wheel" "openrazer" "docker" "audio" "plugdev" "fuse" "dialout"];
     packages = with pkgs; [
       firefox
       chromium
