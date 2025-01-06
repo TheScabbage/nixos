@@ -239,14 +239,10 @@
   documentation.dev.enable = true;
 
   programs.wireshark.enable = true;
-  environment.systemPackages = with pkgs;
-  let
-    stat-rstudio = rstudioWrapper.override {
-      packages = with rPackages; [ tidyverse snakecase dplyr magrittr ggpubr ];
-    };
-  in
+
   ## System Packages
-  [
+  environment.systemPackages = with pkgs; [
+
     ##  CLI Tools
 
     vim
