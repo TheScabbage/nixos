@@ -67,12 +67,12 @@
   programs.dconf.enable = true;
 
   # Keyboard
+  # Switch to US layout and emulate Dvorak in hardware instead
   services.xserver.xkb = {
     layout = "us";
     #variant = "dvorak";
   };
 
-  # Configure console keymap
   #console.keyMap = "dvorak";
   console.keyMap = "us";
 
