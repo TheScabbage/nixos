@@ -482,8 +482,6 @@
     xwayland
     xwaylandvideobridge
     xdg-desktop-portal
-    swayidle
-    swaylock
 
     freetype
     sqlite
