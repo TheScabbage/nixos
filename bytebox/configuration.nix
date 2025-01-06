@@ -499,11 +499,11 @@
   ];
 
 fonts.packages = with pkgs; [
-  noto-fonts
-  fira-code
-  fira-code-symbols
   jetbrains-mono
-  nerdfonts
+  nerd-fonts.noto
+  nerd-fonts.hack
+  nerd-fonts.fira-mono
+  nerd-fonts.fira-code
   helvetica-neue-lt-std
 ];
 
