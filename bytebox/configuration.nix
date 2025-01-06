@@ -38,8 +38,6 @@
   # Fixes Finals crashing on startup
   boot.kernelParams = [ "clearcpuid=304" ];
 
-  #boot.kernelModules = [ "uinput" ];
-
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
 
@@ -352,24 +350,13 @@
     libsForQt5.spectacle
     qpwgraph
     gparted
-    stat-rstudio
-    libsForQt5.kdeconnect-kde
     libsForQt5.kdialog
     qimgv
-    android-studio
-    android-udev-rules
-    barrier
     # wine64Packages.stagingFull
     winePackages.stagingFull
-    winetricks
-    lutris
     cups
-    alvr
-    graphviz
-    logisim-evolution
     qemu_full
     virt-manager
-    kiwix
     ventoy-full
     platformio
     parsec-bin
@@ -387,7 +374,6 @@
 
     # Music/Audio
     reaper
-    distrho
     audacity
     picard
     rhythmbox
@@ -399,7 +385,6 @@
     (discord.override {
       withOpenASAR = true;
     })
-    webcord
 
     ( vesktop.override { withSystemVencord = false; } )
     nheko
@@ -420,9 +405,6 @@
     rust-analyzer
     libunwind
     libclang
-
-    # Lobster
-    lobster
 
     # Go
     go
