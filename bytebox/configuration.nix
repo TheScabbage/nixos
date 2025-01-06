@@ -163,13 +163,13 @@
     yz = "yazi";
   };
 
-  # OpenGL
-  hardware.opengl.enable = true;
-  hardware.opengl.driSupport32Bit = true; 
-  hardware.opengl.extraPackages = with pkgs; [
-    rocmPackages.clr.icd
-    pkgs.mesa.drivers
-  ];
+  # Graphics
+  hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true; 
+  #hardware.graphics.extraPackages = with pkgs; [
+  #  #rocmPackages.clr.icd
+  #  #pkgs.mesa.drivers
+  #];
 
   # OpenSSH
   services.openssh.enable = true;
@@ -299,8 +299,6 @@
     e2fsprogs
     cairo
     mqttx
-    rocmPackages.clr.icd
-    gmsh
     zip
     appimage-run
 
