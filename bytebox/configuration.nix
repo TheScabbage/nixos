@@ -38,7 +38,7 @@
   # Fixes Finals crashing on startup
   boot.kernelParams = [ "clearcpuid=304" ];
 
-  boot.kernelModules = [ "uinput" ];
+  #boot.kernelModules = [ "uinput" ];
 
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
@@ -119,6 +119,7 @@
       chromium
       kate
       gimp
+      glava
       obs-studio
       vlc
       prismlauncher
@@ -126,7 +127,6 @@
       inkscape
       qbittorrent
       rnote
-      glava
       qdirstat
       davinci-resolve
       verilator
