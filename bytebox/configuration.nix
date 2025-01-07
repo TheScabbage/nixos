@@ -1,6 +1,4 @@
-{ config, pkgs, ... }:
-
-{
+{ config, pkgs, ... }: {
   imports =
     [
       ./hardware-configuration.nix
@@ -123,6 +121,7 @@
       qdirstat
       davinci-resolve
       verilator
+
     ];
   };
 
@@ -380,6 +379,7 @@
     })
 
     ( vesktop.override { withSystemVencord = false; } )
+
     nheko
 
     # Allow neovim -> system clipboard
