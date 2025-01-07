@@ -425,10 +425,10 @@
     dotnet-sdk_8
     dotnet-runtime_8
     dotnet-runtime
+    dotnetPackages.Nuget
     icu
     powershell
     vimPlugins.omnisharp-extended-lsp-nvim
-    dotnetPackages.Nuget
     mono
 
     # Arduino
