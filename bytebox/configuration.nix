@@ -444,6 +444,7 @@
     (python311.withPackages (p: with p; [
         pip
         pyserial
+        pygltflib
     ]))
 
     # Java
