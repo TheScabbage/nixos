@@ -304,6 +304,7 @@
     wezterm
     alacritty
     kitty
+    ghostty
 
     # Source control
     git
