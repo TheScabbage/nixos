@@ -365,6 +365,7 @@
     usbimager
     rpi-imager
     rpcs3
+    r2modman
 
     steam
     steamPackages.steamcmd
