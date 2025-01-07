@@ -368,7 +368,7 @@
     r2modman
 
     steam
-    steamPackages.steamcmd
+    steamcmd
     protonplus
     (import ./modules/proton-ge.nix {
       inherit stdenv fetchurl;
