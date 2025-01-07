@@ -370,9 +370,6 @@
     steam
     steamcmd
     protonplus
-    (import ./modules/proton-ge.nix {
-      inherit stdenv fetchurl;
-    })
     xemu
 
     # Music/Audio
