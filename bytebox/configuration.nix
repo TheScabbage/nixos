@@ -469,7 +469,7 @@
     electron
     xwayland
     xwaylandvideobridge
-    xdg-desktop-portal
+    xdg-desktop-portal-kde
 
     freetype
     sqlite
