@@ -128,6 +128,11 @@
   # Allow unfree
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.permittedInsecurePackages = [
+    "dotnet-sdk-6.0.428"
+    "dotnet-runtime-6.0.36"
+    "olm-3.2.16"
+  ];
 
   # Shell aliases
   programs.fish.shellAliases = {
