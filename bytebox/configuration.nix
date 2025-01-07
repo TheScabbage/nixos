@@ -164,10 +164,6 @@
   # Graphics
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true; 
-  #hardware.graphics.extraPackages = with pkgs; [
-  #  #rocmPackages.clr.icd
-  #  #pkgs.mesa.drivers
-  #];
 
   # OpenSSH
   services.openssh.enable = true;
