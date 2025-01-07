@@ -390,7 +390,7 @@
     skypeforlinux
     signal-desktop
     (discord.override {
-      withOpenASAR = true;
+      withVencord = true;
     })
 
     ( vesktop.override { withSystemVencord = false; } )
