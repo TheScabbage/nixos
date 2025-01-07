@@ -299,6 +299,12 @@
     mqttx
     zip
     appimage-run
+    monero-cli
+    monero-gui
+    p2pool
+    timer
+    woof
+    wireshark
 
     # Terminals
     wezterm
@@ -328,7 +334,7 @@
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
-    floorp
+    vscode
     unityhub
     bitwarden
     thunderbird
@@ -336,11 +342,16 @@
     freecad
     libreoffice
     kooha
-    libsForQt5.kcalc
-    rustdesk
-    rustdesk-server
-    xemu
-    libsForQt5.spectacle
+    kdePackages.kcalc
+    kdePackages.spectacle
+    kdePackages.kwalletmanager
+    shutter
+    #rustdesk
+    #rustdesk-server
+    #xemu
+    #qemu_full
+    #virt-manager
+    ksnip
     qpwgraph
     gparted
     libsForQt5.kdialog
@@ -348,8 +359,6 @@
     # wine64Packages.stagingFull
     winePackages.stagingFull
     cups
-    qemu_full
-    virt-manager
     ventoy-full
     platformio
     parsec-bin
@@ -380,8 +389,6 @@
     })
 
     ( vesktop.override { withSystemVencord = false; } )
-
-    nheko
 
     # Allow neovim -> system clipboard
     xclip
