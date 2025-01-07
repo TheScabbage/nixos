@@ -235,14 +235,18 @@
 
   # Enable manpages
   documentation.dev.enable = true;
+  documentation.man = {
+    # In order to enable to mandoc man-db has to be disabled.
+    man-db.enable = false;
+    mandoc.enable = true;
+  };
 
   programs.wireshark.enable = true;
 
+
   ## System Packages
   environment.systemPackages = with pkgs; [
-
     ##  CLI Tools
-
     vim
     neovim
     neovim-remote
