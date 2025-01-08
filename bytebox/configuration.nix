@@ -482,11 +482,15 @@
 
 fonts.packages = with pkgs; [
   jetbrains-mono
-  nerd-fonts.noto
-  nerd-fonts.hack
-  nerd-fonts.fira-mono
-  nerd-fonts.fira-code
   helvetica-neue-lt-std
+  # Nerd fonts on 24.11
+  nerdfonts
+
+  # Nerd fonts on Unstable
+  #nerd-fonts.noto
+  #nerd-fonts.hack
+  #nerd-fonts.fira-mono
+  #nerd-fonts.fira-code
 ];
 
 }
