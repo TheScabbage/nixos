@@ -6,6 +6,7 @@
     ./sys/programming.nix
     ./sys/term.nix
     ./sys/de/kde.nix
+    ./sys/shell/fish.nix
   ];
 
   # Settings for stateful data, like file locations and database versions
@@ -85,8 +86,6 @@
   environment.variables.LD_PRELOAD = "";
 
   virtualisation.libvirtd.enable = true;
-
-  programs.fish.enable = true;
 
   # User account
   users.users.scabbage = {

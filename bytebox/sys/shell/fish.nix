@@ -1,7 +1,6 @@
-{ config, pkgs }:
+{ config, pkgs, ... }:
 {
-  # use steam-hardware module for KK3 nintendo switch mode
-  hardware.steam-hardware.enable = true;
+  programs.fish.enable = true;
 
   # Shell aliases
   programs.fish.shellAliases = {
@@ -43,5 +42,5 @@
       xemu
       r2modman
       gamemode
-  ]
+  ];
 }
