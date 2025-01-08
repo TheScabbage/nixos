@@ -3,7 +3,6 @@
     ./hardware-configuration.nix
     ./sys/game.nix
     ./sys/music.nix
-    ./sys/print.nix
     ./sys/programming.nix
     ./sys/term.nix
     ./sys/de/kde.nix
