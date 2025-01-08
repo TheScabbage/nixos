@@ -1,5 +1,12 @@
 { config, pkgs, ... }:
 {
+  # Dotnet 6 is EOL
+  nixpkgs.config.permittedInsecurePackages = [
+    "dotnet-sdk-6.0.428"
+    "dotnet-runtime-6.0.36"
+    "olm-3.2.16"
+  ];
+
   environment.systemPackages = with pkgs; [
     # Zig
     zig
