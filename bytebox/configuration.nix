@@ -313,6 +313,7 @@
     vala
     nodejs_22
     ghc
+    julia
 
     # DE Shit
     electron
