@@ -30,19 +30,6 @@
   boot.loader.grub.configurationName = "Nix";
   boot.loader.grub.extraGrubInstallArgs = [ "--bootloader-id=Nix" ];
 
-  boot.extraModulePackages = with config.boot.kernelPackages; [ xone ];
-
-  # for bluetooth xbox gamepads
-  hardware.xpadneo.enable = true;
-  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
-
-  # for xbox wireless adapter
-  hardware.xone.enable = true;
-
-
-  # Fixes Finals crashing on startup
-  boot.kernelParams = [ "clearcpuid=304" ];
-
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
 
