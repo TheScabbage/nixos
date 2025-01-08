@@ -363,7 +363,6 @@
 
     # Vanity
     fastfetch
-    where-is-my-sddm-theme
   ];
 
 fonts.packages = with pkgs; [
