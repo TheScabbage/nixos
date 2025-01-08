@@ -184,17 +184,17 @@
   # Sets up all the libraries to load
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
-    stdenv.cc.cc 
-    zlib
-    openssl
-    openssl.dev
-    udev
-    libevdev
-    icu
-    glew
-    glfw
-    glfw2
-    libllvm
+    #stdenv.cc.cc 
+    #zlib
+    #openssl
+    #openssl.dev
+    #udev
+    #libevdev
+    #icu
+    #glew
+    #glfw
+    #glfw2
+    #libllvm
     # used for embedded shit
     pixman
     libgcrypt
