@@ -1,11 +1,19 @@
 { config, pkgs, ... }: {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+    ./sys/game.nix
+    ./sys/music.nix
+    ./sys/print.nix
+    ./sys/programming.nix
+    ./sys/term.nix
+    ./sys/de/kde.nix
+  ];
 
   # Settings for stateful data, like file locations and database versions
   system.stateVersion = "23.05";
+
+  # Enable flakes
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.hostName = "bytebox"; 
   networking.nameservers = [ "1.1.1.1" "8.8.8.8" ];
@@ -30,8 +38,6 @@
   # for xbox wireless adapter
   hardware.xone.enable = true;
 
-  # use steam-hardware module for KK3 nintendo switch mode
-  hardware.steam-hardware.enable = true;
 
   # Fixes Finals crashing on startup
   boot.kernelParams = [ "clearcpuid=304" ];
@@ -54,14 +60,6 @@
     LC_TIME = "en_AU.UTF-8";
   };
 
-  # Desktop Environment
-  services.xserver.enable = true;
-  services.desktopManager.plasma6.enable = true;
-  services.displayManager.sddm.enable = true;
-
-  xdg.portal.enable = true;
-  xdg.portal.xdgOpenUsePortal = true;
-
   programs.dconf.enable = true;
 
   # Keyboard
@@ -73,14 +71,6 @@
 
   #console.keyMap = "dvorak";
   console.keyMap = "us";
-
-  # Enable CUPS to print documents.
-  #services.printing.enable = true;
-  #services.avahi = {
-  #  enable = true;
-  #  nssmdns4 = true;
-  #  openFirewall = true;
-  #};
 
   # Enable sound with pipewire.
   security.rtkit.enable = true;
@@ -130,45 +120,11 @@
 
   # Allow unfree
   nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.permittedInsecurePackages = [
     "dotnet-sdk-6.0.428"
     "dotnet-runtime-6.0.36"
     "olm-3.2.16"
   ];
-
-  # Shell aliases
-  programs.fish.shellAliases = {
-    l = "eza -alh";
-    lg = "lazygit";
-    cfg = "pushd . && cd $HOME/.config/nixos/bytebox/ && vi ./configuration.nix && popd";
-    #nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/.config/nixos/bytebox/configuration.nix";
-    nbs = "pushd . && cd $HOME/.config/nixos/bytebox/ && sudo nixos-rebuild switch --flake . && popd";
-    ndg = "sudo nix-collect-garbage --delete-older-than 7d";
-    try = "nix-shell -p ";
-    search = "nix search nixpkgs ";
-    vi  = "nvim";
-    vw  = "neovide . &";
-    sd = "pwd > ~/.local/share/jumpdir";
-    jd = "cd $(cat ~/.local/share/jumpdir)";
-    clone = "git clone --recursive ";
-    oc = "find . | entr -r ";
-    ns = "nix-shell ";
-    nsp = "nix-shell --pure ";
-    vid = "neovide";
-    udot = "pushd ~/dotfiles && stow . && popd && echo \"Dotfiles updated.\" || echo \"Failed to update dotfiles.\"";
-    fcd = "cd $(fzf --walker=dir,follow,hidden)";
-    cr = "clear";
-    mtm = "~/.config/tmux/startup.sh";
-    tma = "tmux attach";
-    ndkb = "~/Android/Sdk/ndk/ndk-build";
-    u = "cd ..";
-    "..." = "cd ../..";
-    "...." = "cd ../../..";
-    "....." = "cd ../../../..";
-    b = "cd -";
-    yz = "yazi";
-  };
 
   # Graphics
   hardware.graphics.enable = true;
@@ -248,7 +204,6 @@
 
   programs.wireshark.enable = true;
 
-
   ## System Packages
   environment.systemPackages = with pkgs; [
     ##  CLI Tools
@@ -259,14 +214,19 @@
     btop
     wget
     curl
+    tmux
     bat
-    yazi
-    mpv
     eza
+    fzf
+    stow
+    yazi
+    lazygit
+    trashy
+
+    mpv
     fd
     zellij
     zoxide
-    fzf
     tldr
     unzip
     p7zip
@@ -279,16 +239,12 @@
     gcc
     wxGTK32
     tbb
-    tmux
     openssl
     pkg-config
     evtest
     gh
     dig
-    gamemode
     conda
-    stow
-    lazygit
     cloc
     exercism
     ollama
@@ -298,7 +254,6 @@
     busybox
     wlr-randr
     wmctrl
-    trashy
     desktop-file-utils
     pandoc
     inotify-tools
@@ -316,10 +271,6 @@
     wireshark
 
     # Terminals
-    wezterm
-    alacritty
-    kitty
-    ghostty
 
     # Source control
     git
@@ -353,7 +304,6 @@
     kooha
     kdePackages.kcalc
     kdePackages.spectacle
-    kdePackages.kwalletmanager
     shutter
     #rustdesk
     #rustdesk-server
@@ -374,19 +324,6 @@
     usbimager
     rpi-imager
     rpcs3
-    r2modman
-
-    steam
-    steamcmd
-    protonplus
-    xemu
-
-    # Music/Audio
-    reaper
-    audacity
-    picard
-    rhythmbox
-    yt-dlp
 
     # Talk with monkeys
     skypeforlinux
@@ -399,53 +336,6 @@
     wl-clipboard
 
     ## Programming
-    # Zig
-    zig
-    zls
-
-    # Rust
-    cargo
-    rustup
-    cargo-cross
-    rust-analyzer
-    libunwind
-    libclang
-
-    # Go
-    go
-    gopls
-
-    # Lua
-    lua
-    lua54Packages.luarocks
-
-    # CSharp
-    omnisharp-roslyn
-    dotnet-sdk_8
-    dotnet-runtime_8
-    dotnet-runtime
-    dotnetPackages.Nuget
-    icu
-    powershell
-    vimPlugins.omnisharp-extended-lsp-nvim
-    mono
-
-    # Arduino
-    arduino
-    arduino-mk
-    arduino-cli
-    arduino-language-server
-
-    # ESP32
-    esptool
-
-    # Python
-    (python311.withPackages (p: with p; [
-        pip
-        pyserial
-        pygltflib
-    ]))
-
     # Java
     jdk
     jdt-language-server
@@ -463,9 +353,6 @@
 
     # DE Shit
     electron
-    xwayland
-    xwaylandvideobridge
-    xdg-desktop-portal-kde
 
     freetype
     sqlite
@@ -478,6 +365,7 @@
 
     # Vanity
     fastfetch
+    where-is-my-sddm-theme
   ];
 
 fonts.packages = with pkgs; [
