@@ -18,6 +18,7 @@
   environment.systemPackages = with pkgs; [
       steam
       steamcmd
+      gamescope
       protonplus
       xemu
       r2modman
