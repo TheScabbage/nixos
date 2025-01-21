@@ -29,11 +29,13 @@
     lua54Packages.luarocks
 
     # CSharp
-    omnisharp-roslyn
-    dotnet-sdk_8
-    dotnet-runtime_8
-    dotnet-runtime
-    dotnetPackages.Nuget
+    roslyn
+    roslyn-ls
+    dotnet-sdk_9
+    #omnisharp-roslyn
+    #dotnet-runtime_8
+    #dotnet-runtime
+    #dotnetPackages.Nuget
     icu
     powershell
     vimPlugins.omnisharp-extended-lsp-nvim
