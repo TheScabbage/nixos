@@ -14,9 +14,12 @@
   xdg.portal.xdgOpenUsePortal = true;
 
   environment.systemPackages = with pkgs; [
+    kdePackages.kwallet
     kdePackages.kwalletmanager
+    kdePackages.qttools
     xwayland
     xwaylandvideobridge
     xdg-desktop-portal-kde
+    amdgpu_top
   ];
 }
