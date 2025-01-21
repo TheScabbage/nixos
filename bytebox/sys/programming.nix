@@ -53,6 +53,10 @@
         pip
         pyserial
         pygltflib
+        svgwrite
+        pydbus
+        pygobject3
+        gobject-introspection
     ]))
   ];
 }
