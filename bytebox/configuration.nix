@@ -73,6 +73,7 @@
     YDOTOOL_SOCKET    = "/tmp/ydotools";
     GSETTINGS_BACKEND = "keyfile";
     LD_PRELOAD = "";
+    DOTNET_CLI_TELEMETRY_OPTOUT = "true";
   };
 
   virtualisation.libvirtd.enable = true;
