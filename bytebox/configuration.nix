@@ -289,7 +289,7 @@
     # Talk with monkeys
     skypeforlinux
     signal-desktop
-    ( discord.override { withOpenASAR = true; } )
+    discord
     ( vesktop.override { withSystemVencord = false; })
 
     # Allow neovim -> system clipboard
