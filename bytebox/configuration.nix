@@ -69,9 +69,11 @@
     pulse.enable = true;
   };
 
-  environment.variables.YDOTOOL_SOCKET    = "/tmp/ydotools";
-  environment.variables.GSETTINGS_BACKEND = "keyfile";
-  environment.variables.LD_PRELOAD = "";
+  environment.variables = {
+    YDOTOOL_SOCKET    = "/tmp/ydotools";
+    GSETTINGS_BACKEND = "keyfile";
+    LD_PRELOAD = "";
+  };
 
   virtualisation.libvirtd.enable = true;
 
