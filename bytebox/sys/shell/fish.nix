@@ -9,7 +9,7 @@
     cfg = "pushd . && cd $HOME/.config/nixos/bytebox/ && vi ./configuration.nix && popd";
     #nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/.config/nixos/bytebox/configuration.nix";
     nbs = "pushd . && cd $HOME/.config/nixos/bytebox/ && sudo nixos-rebuild switch --flake . && popd";
-    nuf = "pushd . && cd $HOME/.config/nixos/bytebox/ && nixos update flake && popd";
+    nuf = "pushd . && cd $HOME/.config/nixos/bytebox/ && nixos flake update && popd";
     ndg = "sudo nix-collect-garbage --delete-older-than 7d";
     try = "nix-shell -p ";
     search = "nix search nixpkgs ";
