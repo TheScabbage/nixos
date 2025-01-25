@@ -261,10 +261,13 @@
     cmake
     libgcc
     gcc9
-    python312
-    python312Packages.torch
-    python312Packages.hexdump
-    python312Packages.pyserial
+
+    (python311.withPackages (p: with p; [
+        pip
+        pyserial
+        torch
+        hexdump
+    ]))
     libGL
     libglibutil
     btop
