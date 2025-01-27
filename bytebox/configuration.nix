@@ -231,8 +231,6 @@
     woof
     wireshark
 
-    # Terminals
-
     # Source control
     git
     git-lfs
