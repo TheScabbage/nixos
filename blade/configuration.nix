@@ -152,16 +152,16 @@
   # Dynamic libraries
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
-    stdenv.cc.cc 
-    zlib
-    openssl
-    openssl.dev
-    udev
-    libevdev
-    icu
-    glew
-    glfw
-    glfw2
+    #stdenv.cc.cc 
+    #zlib
+    #openssl
+    #openssl.dev
+    #udev
+    #libevdev
+    #icu
+    #glew
+    #glfw
+    #glfw2
   ];
 
   # Shell aliases
