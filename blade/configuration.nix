@@ -167,7 +167,7 @@
   # Shell aliases
   programs.bash.shellAliases = {
     l = "eza -alh";
-    cd = "z ";
+    #cd = "z ";
     cds = "pushd . > /dev/null && z "; # cd, save the last directory
     b = "popd > /dev/null || popd -n"; # go back to the last dir in the stack
     cdi = "zi ";
