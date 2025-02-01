@@ -171,8 +171,11 @@
     cds = "pushd . > /dev/null && z "; # cd, save the last directory
     b = "popd > /dev/null || popd -n"; # go back to the last dir in the stack
     cdi = "zi ";
-    cfg = "nvim $HOME/nixos/blade/configuration.nix";
-    nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/nixos/blade/configuration.nix";
+    #cfg = "nvim $HOME/nixos/blade/configuration.nix";
+    #nbs = "sudo nixos-rebuild switch -I nixos-config=$HOME/nixos/blade/configuration.nix";
+    cfg = "pushd . && cd $HOME/nixos/blade/ && vi ./configuration.nix && popd";
+    nbs = "pushd . && cd $HOME/nixos/blade/ && sudo nixos-rebuild switch --flake . && popd";
+    nuf = "pushd . && cd $HOME/nixos/blade/ && nix flake update && popd";
     try = "nix-shell -p ";
     ns = "nix-shell";
     vi = "nvim ";
