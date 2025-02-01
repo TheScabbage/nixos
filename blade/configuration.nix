@@ -193,7 +193,7 @@
  
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  nix.settings.max-jobs = 2;
+  nix.settings.max-jobs = 8;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Flatpak 
