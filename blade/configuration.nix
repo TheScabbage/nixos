@@ -205,6 +205,7 @@
     neovim
     neovim-remote
     tmux
+    ghostty
     kitty
     git
     git-lfs
@@ -219,15 +220,10 @@
     yazi
     tldr
     gnumake
-    gcc
-    libgcc
-    libclang
+    #gcc
     cmake
-    bison
     zoxide
-    ninja
     qpwgraph
-    ddrescue
     dig
     dos2unix
     qemu_full
@@ -240,12 +236,11 @@
     wine-staging
     bitwarden
     barrier
-    openssl
     ffmpeg_6-full 
     mpv
     fuse
     openjdk17-bootstrap
-    rstudio
+    #rstudio
     stow
     lazygit
     zig
@@ -255,8 +250,6 @@
     nodejs_22
     nodePackages.typescript-language-server
     tree-sitter
-    flex
-    yacc
     pkg-config
     cmake
     libgcc
@@ -265,7 +258,7 @@
     (python311.withPackages (p: with p; [
         pip
         pyserial
-        torch
+        #torch
         hexdump
     ]))
     libGL
@@ -290,7 +283,6 @@
     })
     vscode
     reaper
-    distrho
     freecad
     prusa-slicer
     inkscape
@@ -354,8 +346,6 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
-
-
   environment.variables = {
     MOZ_USE_XINPUT2="1";
     EDITOR="nvim";
@@ -375,7 +365,7 @@
     fira-code
     fira-code-symbols
     jetbrains-mono
-    nerdfonts
+    #nerdfonts
     helvetica-neue-lt-std
   ];
 
