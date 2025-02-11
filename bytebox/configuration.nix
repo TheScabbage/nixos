@@ -154,6 +154,8 @@
   services.pcscd.enable = true;
 
   #virtualisation.docker.enable = true;
+  programs.adb.enable = true;
+
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "scabbage" ];
 
