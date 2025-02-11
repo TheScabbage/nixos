@@ -19,6 +19,7 @@
   networking.hostName = "bytebox"; 
   networking.nameservers = [ "1.1.1.1" "8.8.8.8" ];
   services.resolved.enable = true;
+  networking.interfaces.eno1.wakeOnLan.enable = true;
 
   fileSystems."/mnt/brother-chungus" = {
       device = "/dev/disk/by-uuid/388c40a0-ef36-4d7c-b08f-6cd9af63b9c6";
