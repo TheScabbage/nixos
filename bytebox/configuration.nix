@@ -85,7 +85,7 @@
     shell = pkgs.fish;
     isNormalUser = true;
     description = "scabbage";
-    extraGroups = [ "audio" "networkmanager" "wheel" "libvirtd" "dialout" "docker" "uinput" "wireshark"];
+    extraGroups = [ "audio" "networkmanager" "wheel" "libvirtd" "dialout" "docker" "uinput" "wireshark" "kvm" "adbusers"];
     packages = with pkgs; [
       chromium
       kate
