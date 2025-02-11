@@ -266,7 +266,6 @@
     obsidian
     freecad
     libreoffice
-    kooha
     kdePackages.kcalc
     kdePackages.spectacle
     shutter
