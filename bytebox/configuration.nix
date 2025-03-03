@@ -90,6 +90,7 @@
       chromium
       kate
       gimp
+      krita
       glava
       obs-studio
       vlc
