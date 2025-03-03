@@ -182,6 +182,7 @@
     wget
     curl
     tmux
+    zellij
     bat
     eza
     fzf
@@ -192,7 +193,6 @@
 
     mpv
     fd
-    zellij
     zoxide
     tldr
     unzip
