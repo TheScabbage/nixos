@@ -262,6 +262,9 @@
       })
     vscode
     unityhub
+    nakama
+    cockroachdb
+
     bitwarden
     thunderbird
     obsidian
