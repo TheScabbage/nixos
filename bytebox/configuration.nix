@@ -191,6 +191,8 @@
     yazi
     lazygit
     trashy
+    man-pages
+    man-pages-posix
 
     mpv
     fd
