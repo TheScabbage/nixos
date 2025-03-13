@@ -169,6 +169,7 @@
     man-db.enable = false;
     mandoc.enable = true;
   };
+  documentation.man.generateCaches = true;
 
   programs.wireshark.enable = true;
 
