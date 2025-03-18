@@ -18,7 +18,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.hostName = "bytebox"; 
-  networking.nameservers = [ "1.1.1.1" "8.8.8.8" ];
+  networking.nameservers = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
   services.resolved.enable = true;
   networking.interfaces.eno1.wakeOnLan.enable = true;
 
