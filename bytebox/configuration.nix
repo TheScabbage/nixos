@@ -8,6 +8,7 @@
     ./sys/bluetooth.nix
     ./sys/de/kde.nix
     ./sys/shell/fish.nix
+    ./sys/keylogging.nix
   ];
 
   # Settings for stateful data, like file locations and database versions
