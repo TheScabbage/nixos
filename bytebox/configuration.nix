@@ -258,6 +258,7 @@
     gdb
     xorg.libX11
     xorg.libX11.dev
+    logkeys
 
     # Phat GUI Apps
     neovide
