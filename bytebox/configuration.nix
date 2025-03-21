@@ -9,6 +9,7 @@
     ./sys/de/kde.nix
     ./sys/shell/fish.nix
     ./sys/keylogging.nix
+    ./sys/postgres.nix
   ];
 
   # Settings for stateful data, like file locations and database versions
