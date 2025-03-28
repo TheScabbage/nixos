@@ -270,8 +270,6 @@
     vscode
     jetbrains.idea-community
     unityhub
-    nakama
-    cockroachdb
 
     bitwarden
     thunderbird
