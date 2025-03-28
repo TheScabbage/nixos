@@ -78,6 +78,7 @@
     GSETTINGS_BACKEND = "keyfile";
     LD_PRELOAD = "";
     DOTNET_CLI_TELEMETRY_OPTOUT = "true";
+    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = "true";
   };
 
   virtualisation.libvirtd.enable = true;
