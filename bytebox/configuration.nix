@@ -298,6 +298,7 @@
     usbimager
     rpi-imager
     rpcs3
+    lorien
 
     # Talk with monkeys
     skypeforlinux
