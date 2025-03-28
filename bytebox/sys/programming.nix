@@ -59,6 +59,10 @@
         pydbus
         pygobject3
         gobject-introspection
+        bidict
+        pygame
+        regex
+        openai
     ]))
   ];
 }
