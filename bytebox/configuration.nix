@@ -268,6 +268,7 @@
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
     vscode
+    jetbrains.idea-community
     unityhub
     nakama
     cockroachdb
