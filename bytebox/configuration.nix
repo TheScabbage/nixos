@@ -289,8 +289,8 @@
     gparted
     libsForQt5.kdialog
     qimgv
-    # wine64Packages.stagingFull
-    winePackages.stagingFull
+    wine64Packages.stagingFull
+    #winePackages.stagingFull
     cups
     ventoy-full
     platformio
