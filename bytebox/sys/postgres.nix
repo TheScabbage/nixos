@@ -1,15 +1,16 @@
 { config, pkgs, ... }:
 {
-    config.services.postgresql = {
+    services.postgresql = {
         enable = true;
         ensureDatabases = [ "dust" ];
         authentication = pkgs.lib.mkOverride 10 ''
-            #type database DBuser auth-method
-            local all      all    trust
+            #type DATABASE  USER        ADDRESS     METHOD
+            local all       all                     trust
+            host  all       postgres    0.0.0.0/0   scram-sha-256
         '';
     };
 
-    environment.systemPackages = with pkgs; {
-        postgresql
-    };
+    #environment.systemPackages = with pkgs; {
+    #    postgresql
+    #};
 }
