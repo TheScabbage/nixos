@@ -28,6 +28,7 @@
     mtm = "~/.config/tmux/startup.sh";
     tma = "tmux attach";
     ndkb = "~/Android/Sdk/ndk/ndk-build";
+    tr = "trash";
     u = "cd ..";
     "..." = "cd ../..";
     "...." = "cd ../../..";
