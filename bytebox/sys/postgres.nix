@@ -10,7 +10,7 @@
         '';
     };
 
-    #environment.systemPackages = with pkgs; {
-    #    postgresql
-    #};
+    environment.systemPackages = with pkgs; [
+        pgadmin4
+    ];
 }
