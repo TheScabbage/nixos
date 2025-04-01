@@ -182,6 +182,7 @@
     vim
     neovim
     neovim-remote
+    glogg
     ripgrep
     btop
     wget
