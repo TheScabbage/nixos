@@ -115,7 +115,7 @@
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true; 
   hardware.amdgpu.opencl.enable = true;
-  #hardware.amdgpu.amdvlk.enable = true;
+  hardware.amdgpu.amdvlk.enable = true;
 
   # OpenSSH
   services.openssh.enable = true;
