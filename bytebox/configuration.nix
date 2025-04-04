@@ -244,6 +244,10 @@
     timer
     woof
     wireshark
+    
+    # Crypto
+    libargon2
+    ecdsautils
 
     # Source control
     git
