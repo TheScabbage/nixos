@@ -197,6 +197,7 @@
     trashy
     man-pages
     man-pages-posix
+    inetutils
 
     mpv
     fd
