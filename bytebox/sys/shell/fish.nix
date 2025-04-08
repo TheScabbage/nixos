@@ -36,13 +36,4 @@
     b = "cd -";
     yz = "yazi";
   };
-
-  environment.systemPackages = with pkgs; [
-      steam
-      steamcmd
-      protonplus
-      xemu
-      r2modman
-      gamemode
-  ];
 }
