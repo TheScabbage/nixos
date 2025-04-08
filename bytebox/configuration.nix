@@ -91,7 +91,6 @@
     extraGroups = [ "audio" "networkmanager" "wheel" "libvirtd" "dialout" "docker" "uinput" "wireshark" "kvm" "adbusers"];
     packages = with pkgs; [
       chromium
-      kate
       gimp
       krita
       glava
@@ -284,8 +283,8 @@
     kdePackages.kcalc
     kdePackages.spectacle
     shutter
-    rustdesk
-    rustdesk-server
+    #rustdesk
+    #rustdesk-server
     #xemu
     #qemu_full
     #virt-manager
