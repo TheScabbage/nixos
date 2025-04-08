@@ -79,6 +79,8 @@
     LD_PRELOAD = "";
     DOTNET_CLI_TELEMETRY_OPTOUT = "true";
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = "true";
+    PAGER = "sh -c 'col -bx | bat -l man -p'";
+    MANPAGER = "sh -c 'col -bx | bat -l man -p'";
   };
 
   virtualisation.libvirtd.enable = true;
