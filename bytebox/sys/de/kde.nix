@@ -19,8 +19,6 @@
     kdePackages.kwalletmanager
     kdePackages.qttools
     xwayland
-    xwaylandvideobridge
-    xdg-desktop-portal-kde
     amdgpu_top
   ];
 }
