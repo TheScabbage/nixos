@@ -168,6 +168,7 @@
   users.extraGroups.vboxusers.members = [ "scabbage" ];
 
   services.locate.enable = true;
+  services.mullvad-vpn.enable = true;
 
   # Enable manpages
   documentation.dev.enable = true;
@@ -179,6 +180,8 @@
   documentation.man.generateCaches = true;
 
   programs.wireshark.enable = true;
+
+  
 
   ## System Packages
   environment.systemPackages = with pkgs; [
@@ -249,6 +252,7 @@
     timer
     woof
     wireshark
+    mullvad-vpn
     
     # Crypto
     libargon2
