@@ -80,7 +80,6 @@
   environment.variables = {
     YDOTOOL_SOCKET    = "/tmp/ydotools";
     GSETTINGS_BACKEND = "keyfile";
-    LD_PRELOAD = "";
     DOTNET_CLI_TELEMETRY_OPTOUT = "true";
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = "true";
     PAGER = "sh -c 'col -bx | bat -l man -p'";
