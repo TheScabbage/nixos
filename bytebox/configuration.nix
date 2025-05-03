@@ -278,6 +278,7 @@
 
     # Phat GUI Apps
     neovide
+    librewolf
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
