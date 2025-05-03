@@ -19,6 +19,8 @@
 
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.max-jobs = 4;
+  nix.settings.cores = 8;
 
   networking.hostName = "bytebox"; 
   networking.nameservers = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
