@@ -360,6 +360,7 @@
 fonts.packages = with pkgs; [
   jetbrains-mono
   helvetica-neue-lt-std
+  xkcd-font
   # Nerd fonts on 24.11
   #nerdfonts
 
