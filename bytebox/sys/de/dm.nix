@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 {
+  services.xserver.enable = true;
+  services.xserver.videoDrivers = [ "amdgpu" ];
+
   services.displayManager.enable = true;
   #services.xserver.displayManager.lightdm.enable = true;
   #services.xserver.displayManager.lightdm.background = ./wallpapers/space.jpg;
