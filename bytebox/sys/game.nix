@@ -18,6 +18,7 @@
   environment.systemPackages = with pkgs; [
       steam
       steamcmd
+      steam-tui
       gamescope
       protonplus
       xemu
