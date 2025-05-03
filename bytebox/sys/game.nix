@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  boot.extraModulePackages = with config.boot.kernelPackages; [ xone ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [ xpadneo xone ];
 
   # Use steam-hardware module for KK3 nintendo switch mode
   hardware.steam-hardware.enable = true;
