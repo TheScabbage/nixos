@@ -236,7 +236,7 @@
 
     yabridge
     yabridgectl
-    wine-staging
+    wine64
     bitwarden
     barrier
     ffmpeg_6-full 
