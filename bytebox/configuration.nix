@@ -321,7 +321,6 @@
     wine64Packages.stagingFull
     #winePackages.stagingFull
     cups
-    ventoy-full
     platformio
     parsec-bin
     usbimager
