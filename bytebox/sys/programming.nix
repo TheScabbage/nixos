@@ -28,6 +28,9 @@
     lua
     lua54Packages.luarocks
 
+    # Nix
+    nil
+
     # CSharp
     roslyn
     roslyn-ls
