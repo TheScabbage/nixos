@@ -213,6 +213,7 @@
     man-pages
     man-pages-posix
     inetutils
+    screenkey
 
     mpv
     fd
