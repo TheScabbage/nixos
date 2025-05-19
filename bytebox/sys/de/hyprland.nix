@@ -8,8 +8,11 @@
         networkmanagerapplet
         wofi
         hyprpaper
+        hyprshot
+        gnome-keyring
         xdg-desktop-portal-hyprland
         xfce.thunar
         lxappearance
+        nwg-look
     ];
 }
