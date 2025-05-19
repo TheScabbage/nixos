@@ -11,5 +11,6 @@
     kdePackages.qttools
     xwayland
     amdgpu_top
+    wayland-scanner
   ];
 }
