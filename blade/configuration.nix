@@ -247,6 +247,7 @@
     stow
     lazygit
     zig
+    zig_0_13
     cargo
     gopls
     ripgrep
