@@ -295,6 +295,7 @@
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
+    ladybird
     vscode
     jetbrains.idea-community
     unityhub
