@@ -266,6 +266,11 @@
     libargon2
     ecdsautils
 
+    dotnet-runtime_7
+    dotnet-sdk_7
+    #dotnet-runtime_6
+    #dotnet-sdk_6
+
     # Source control
     git
     git-lfs
