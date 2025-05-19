@@ -308,8 +308,8 @@
     kdePackages.kcalc
     kdePackages.spectacle
     shutter
-    #rustdesk
-    #rustdesk-server
+    rustdesk
+    rustdesk-server
     #xemu
     #qemu_full
     #virt-manager
