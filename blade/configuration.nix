@@ -176,7 +176,7 @@
     cfg = "pushd . && cd $HOME/nixos/blade/ && vi ./configuration.nix && popd";
     nbs = "pushd . && cd $HOME/nixos/blade/ && sudo nixos-rebuild switch --flake . && popd";
     nuf = "pushd . && cd $HOME/nixos/blade/ && nix flake update && popd";
-    try = "nix-shell -p ";
+    np = "nix-shell -p ";
     ns = "nix-shell";
     vi = "nvim ";
     vd = "WINIT_UNIX_BACKEND=x11 neovide ";
