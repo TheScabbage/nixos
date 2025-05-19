@@ -329,7 +329,6 @@
     lorien
 
     # Talk with monkeys
-    skypeforlinux
     signal-desktop
     discord
     #( discord.override { withVencord = true; })
