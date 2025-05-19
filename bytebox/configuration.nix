@@ -86,7 +86,7 @@
     #MANPAGER = "sh -c 'col -bx | bat -l man -p'";
   };
 
-  virtualisation.libvirtd.enable = true;
+  #virtualisation.libvirtd.enable = true;
 
   # User account
   users.users.scabbage = {
@@ -164,7 +164,7 @@
   #virtualisation.docker.enable = true;
   programs.adb.enable = true;
 
-  virtualisation.virtualbox.host.enable = true;
+  #virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "scabbage" ];
 
   services.locate.enable = true;
