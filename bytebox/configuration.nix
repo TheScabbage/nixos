@@ -380,6 +380,7 @@ fonts.packages = with pkgs; [
   #nerdfonts
 
   # Nerd fonts on Unstable
+  noto-fonts
   nerd-fonts.noto
   nerd-fonts.hack
   nerd-fonts.fira-mono
