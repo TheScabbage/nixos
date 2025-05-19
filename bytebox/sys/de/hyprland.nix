@@ -2,6 +2,8 @@
 {
     programs.hyprland.enable = true;
 
+    security.pam.services.login.enableGnomeKeyring = true;
+
     environment.systemPackages = with pkgs; [
         kitty
         waybar
