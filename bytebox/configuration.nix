@@ -22,7 +22,7 @@
   nix.settings.max-jobs = 4;
   nix.settings.cores = 8;
 
-  networking.hostName = "bytebox"; 
+  networking.hostName = "bytebox";
   networking.nameservers = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
   services.resolved.enable = true;
   networking.interfaces.eno1.wakeOnLan.enable = true;
@@ -124,7 +124,7 @@
 
   # Graphics
   hardware.graphics.enable = true;
-  hardware.graphics.enable32Bit = true; 
+  hardware.graphics.enable32Bit = true;
   hardware.amdgpu.opencl.enable = true;
   hardware.amdgpu.amdvlk.enable = true;
 
