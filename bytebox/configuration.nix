@@ -209,7 +209,9 @@
     stow
     yazi
     lazygit
+    delta
     trashy
+    kondo
     man-pages
     man-pages-posix
     inetutils
@@ -217,6 +219,7 @@
 
     mpv
     fd
+    fselect
     zoxide
     tldr
     unzip
