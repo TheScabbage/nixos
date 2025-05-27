@@ -216,6 +216,7 @@
     man-pages-posix
     inetutils
     screenkey
+    jq
 
     mpv
     fd
