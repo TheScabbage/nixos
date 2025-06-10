@@ -66,6 +66,7 @@
         pygame
         regex
         openai
+        pillow
     ]))
   ];
 }
