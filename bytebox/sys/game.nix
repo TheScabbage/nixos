@@ -24,5 +24,6 @@
       xemu
       r2modman
       gamemode
+      clonehero
   ];
 }
