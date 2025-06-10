@@ -105,7 +105,6 @@
       prismlauncher
       prusa-slicer
       inkscape
-      qbittorrent
       rnote
       qdirstat
       davinci-resolve
@@ -304,7 +303,7 @@
     vscode
     jetbrains.idea-community
     unityhub
-
+    qbittorrent
     bitwarden
     thunderbird
     obsidian
