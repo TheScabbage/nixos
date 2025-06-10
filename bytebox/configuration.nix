@@ -145,7 +145,6 @@
     #libevdev
     #icu
     #glew
-    #glfw
     #glfw2
     #libllvm
     # used for embedded shit
@@ -366,7 +365,6 @@
     sqlite
     libxml2
     xml2
-    SDL2
 
     # printing
     brlaser
