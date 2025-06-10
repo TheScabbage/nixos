@@ -292,6 +292,7 @@
     xorg.libX11
     xorg.libX11.dev
     logkeys
+    calcurse
 
     # Phat GUI Apps
     neovide
