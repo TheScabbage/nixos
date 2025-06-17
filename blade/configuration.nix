@@ -17,7 +17,7 @@
   boot.kernelPackages = pkgs.linuxPackages_6_12;
  
   networking.hostName = "nixbook"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
  
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -50,7 +50,9 @@
  
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  #services.xserver.desktopManager.plasma5.enable = true;
+  services.desktopManager.plasma6.enable = true;
+
  
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -304,6 +306,8 @@
     qalculate-qt
     unityhub
     vlc
+    xdg-desktop-portal-kde
+    xdg-desktop-portal-gtk
 
     # CSharp
     omnisharp-roslyn
@@ -353,6 +357,7 @@
   environment.variables = {
     MOZ_USE_XINPUT2="1";
     EDITOR="nvim";
+    XCURSOR_SIZE="24";
   };
  
   # Razer Support
