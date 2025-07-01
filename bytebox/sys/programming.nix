@@ -20,6 +20,9 @@
     libunwind
     libclang
 
+    # LLVM
+    lldb
+
     # Go
     go
     gopls
