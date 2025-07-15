@@ -160,6 +160,14 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 # Keymapp Flashing rules for the Voyager
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu"
   '';
+
+  services.syncthing = {
+    enable = true;
+    user = "scabbage";
+    dataDir = "/home/scabbage/documents/scabbagenotes";
+    configDir = "/home/scabbage/.config/syncthing";
+  };
+
   # Sets up all the libraries to load
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -289,6 +297,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     woof
     wireshark
     mullvad-vpn
+    syncthing
+    syncthingtray
 
     # Crypto
     libargon2
