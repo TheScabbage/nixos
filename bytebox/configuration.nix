@@ -249,6 +249,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     inetutils
     screenkey
     jq
+    pop
 
     mpv
     fd
