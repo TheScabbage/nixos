@@ -211,7 +211,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
   users.extraGroups.vboxusers.members = [ "scabbage" ];
 
   services.locate.enable = true;
-  services.mullvad-vpn.enable = true;
 
   # Enable manpages
   documentation.dev.enable = true;
