@@ -32,6 +32,11 @@
     };
 
   boot.loader.systemd-boot.enable = true;
+  systemd.user.extraConfig = ''
+    DefaultTimeoutStopSec=30s
+    DefaultTimeoutKillSec=10s
+  '';
+
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.configurationName = "Nix";
   boot.loader.grub.extraGrubInstallArgs = [ "--bootloader-id=Nix" ];
