@@ -338,7 +338,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
-    ladybird
     vscode
     jetbrains.idea-community
     unityhub
