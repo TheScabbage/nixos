@@ -339,7 +339,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
     vscode
-    jetbrains.idea-community
     unityhub
     qbittorrent
     bitwarden
