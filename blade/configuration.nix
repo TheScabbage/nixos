@@ -304,8 +304,8 @@
     qalculate-qt
     unityhub
     vlc
-    xdg-desktop-portal-kde
-    xdg-desktop-portal-gtk
+    kdePackages.xdg-desktop-portal-kde
+    #xdg-desktop-portal-gtk
 
     # CSharp
     omnisharp-roslyn
