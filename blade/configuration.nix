@@ -281,7 +281,6 @@
     # Apps
     neovide
     polychromatic
-    skypeforlinux
     signal-desktop
     (discord.override {
       withVencord = true;
