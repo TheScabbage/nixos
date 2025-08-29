@@ -232,7 +232,7 @@
     qpwgraph
     dig
     dos2unix
-    qemu_full
+    #qemu_full
     ascii
     entr
     wmctrl
