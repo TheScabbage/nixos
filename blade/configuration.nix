@@ -146,7 +146,7 @@
     packages = with pkgs; [
       firefox
       chromium
-      kate
+      #kate
     #  thunderbird
     ];
   };
