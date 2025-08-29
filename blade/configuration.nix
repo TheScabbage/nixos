@@ -245,7 +245,6 @@
     ffmpeg_6-full 
     mpv
     fuse
-    openjdk17-bootstrap
     #rstudio
     stow
     lazygit
