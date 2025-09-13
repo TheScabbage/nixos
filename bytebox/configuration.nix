@@ -163,6 +163,10 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu"
   '';
 
+  services.udev.packages = [
+    pkgs.android-udev-rules
+  ];
+
   services.syncthing = {
     enable = true;
     user = "scabbage";
