@@ -325,7 +325,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     gnumake
     cmake
     just
-    gcc9
     libllvm
     ilspycmd
     gdb
@@ -359,7 +358,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     ksnip
     qpwgraph
     gparted
-    libsForQt5.kdialog
     qimgv
     wine64Packages.stagingFull
     #winePackages.stagingFull
