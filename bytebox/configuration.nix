@@ -368,6 +368,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     lorien
     qmk
     keymapp
+    mediawriter
 
     # Talk with monkeys
     signal-desktop
