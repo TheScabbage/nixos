@@ -94,7 +94,7 @@
     shell = pkgs.fish;
     isNormalUser = true;
     description = "scabbage";
-    extraGroups = [ "audio" "networkmanager" "wheel" "libvirtd" "dialout" "docker" "plugdev" "input" "uinput" "wireshark" "kvm" "adbusers"];
+    extraGroups = [ "audio" "networkmanager" "wheel" "libvirtd" "dialout" "docker" "plugdev" "input" "uinput" "wireshark" "kvm" "adbusers" ];
     packages = with pkgs; [
       chromium
       gimp
