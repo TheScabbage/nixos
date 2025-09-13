@@ -411,7 +411,13 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
 
     # Vanity
     fastfetch
+
+    # Android
+    devenv
+    android-studio
   ];
+
+nixpkgs.config.android_sdk.accept_license = true;
 
 fonts.packages = with pkgs; [
   jetbrains-mono
