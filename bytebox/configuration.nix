@@ -369,6 +369,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     qmk
     keymapp
     mediawriter
+    input-leap
 
     # Talk with monkeys
     #signal-desktop # killed for flatpak cuz this doesnt update often
