@@ -26,10 +26,6 @@
   networking.nameservers = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
   services.resolved.enable = true;
 
-  fileSystems."/mnt/brother-chungus" = {
-      device = "/dev/disk/by-uuid/388c40a0-ef36-4d7c-b08f-6cd9af63b9c6";
-      fsType = "ext4";
-    };
 
   boot.loader.systemd-boot.enable = true;
   systemd.user.extraConfig = ''
