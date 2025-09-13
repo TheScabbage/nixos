@@ -131,6 +131,8 @@
   services.openssh.enable = true;
   services.openssh.settings.PasswordAuthentication = false;
 
+  services.tailscale.enable = true;
+
   # Flatpak
   services.flatpak.enable = true;
 
