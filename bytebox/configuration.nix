@@ -384,6 +384,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     # Java
     jdk
     jdt-language-server
+    kotlin-language-server
 
     # PHP
     php83
