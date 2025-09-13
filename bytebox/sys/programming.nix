@@ -9,8 +9,9 @@
 
   environment.systemPackages = with pkgs; [
     # Zig
-    zig
-    zls
+    #zig
+    zig_0_15
+    #zls
 
     # Rust
     cargo
