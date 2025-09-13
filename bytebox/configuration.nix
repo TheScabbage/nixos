@@ -371,7 +371,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     mediawriter
 
     # Talk with monkeys
-    signal-desktop
+    #signal-desktop # killed for flatpak cuz this doesnt update often
     discord
     #( discord.override { withVencord = true; })
     ( vesktop.override { withSystemVencord = false; })
