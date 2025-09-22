@@ -17,12 +17,16 @@
         modules = [
           ./configuration.nix
           {
+            nixpkgs.config = {
+              allowUnfree = true;
+            };
+
             nixpkgs.overlays = [
               (final: prev: {
                 roslyn-ls = nixpkgs-roslyn.legacyPackages.${prev.system}.roslyn-ls;
               })
               (final: prev: {
-                unityhub = nixpkgs-unityhub.legacyPackages.${prev.system}.unityhub;
+                unityhub = prev.unityhub.overrideAttrs (old: { allowUnfree = true; });
               })
             ];
           }
