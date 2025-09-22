@@ -58,19 +58,19 @@
     esptool
 
     # Python
-    (python311.withPackages (p: with p; [
-        pip
-        pyserial
-        pygltflib
-        svgwrite
-        pydbus
-        pygobject3
-        gobject-introspection
-        bidict
-        pygame
-        regex
-        openai
-        pillow
-    ]))
+    #(python311.withPackages (p: with p; [
+    #    pip
+    #    pyserial
+    #    pygltflib
+    #    svgwrite
+    #    pydbus
+    #    pygobject3
+    #    gobject-introspection
+    #    bidict
+    #    pygame
+    #    regex
+    #    openai
+    #    pillow
+    #]))
   ];
 }
