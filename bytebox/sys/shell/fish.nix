@@ -37,5 +37,6 @@
     yz = "yazi";
     mkzigexe = "~/.config/fish/create_zig_exe.sh";
     cal = "calcurse";
+    jot = "~/projects/jot/zig-out/bin/jot";
   };
 }
