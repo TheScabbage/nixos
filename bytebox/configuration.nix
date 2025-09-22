@@ -26,7 +26,6 @@
   networking.nameservers = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
   services.resolved.enable = true;
 
-
   boot.loader.systemd-boot.enable = true;
   systemd.user.extraConfig = ''
     DefaultTimeoutStopSec=30s
@@ -371,6 +370,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     keymapp
     mediawriter
     input-leap
+    zulip
 
     # Talk with monkeys
     #signal-desktop # killed for flatpak cuz this doesnt update often
