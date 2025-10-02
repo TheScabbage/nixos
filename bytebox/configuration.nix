@@ -352,8 +352,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     kdePackages.kcalc
     kdePackages.spectacle
     shutter
-    rustdesk
-    rustdesk-server
+    #rustdesk
+    #rustdesk-server
     #xemu
     #qemu_full
     #virt-manager
