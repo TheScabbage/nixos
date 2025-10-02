@@ -22,6 +22,12 @@
   nix.settings.max-jobs = 4;
   nix.settings.cores = 8;
 
+  nix.settings.trusted-users = [ "root" "scabbage" ];
+  nix.settings.substituters = [
+    "https://cache.nixos.org/"
+    "https://ghostty.cachix.org"
+  ];
+
   networking.hostName = "bytebox";
   networking.nameservers = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
   services.resolved.enable = true;
