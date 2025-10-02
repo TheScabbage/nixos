@@ -421,6 +421,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     # Android
     devenv
     android-studio
+
+    claude-code
   ];
 
 nixpkgs.config.android_sdk.accept_license = true;
