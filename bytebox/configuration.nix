@@ -135,11 +135,7 @@
   # OpenSSH
   services.openssh.enable = true;
   services.openssh.settings.PasswordAuthentication = false;
-
   services.tailscale.enable = true;
-
-  # Flatpak
-  services.flatpak.enable = true;
 
   services.udev.extraRules = ''
 # Rules for Oryx web flashing and live training
