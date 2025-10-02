@@ -232,6 +232,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     vim
     neovim
     neovim-remote
+    micro
     glogg
     ripgrep
     btop
@@ -341,6 +342,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
       })
     vscode
     unityhub
+    godot
     qbittorrent
     bitwarden
     thunderbird
