@@ -4,6 +4,7 @@
     wezterm
     alacritty
     kitty
-    ghostty
+    # Disabled (building from source instead)
+    #ghostty
   ];
 }
