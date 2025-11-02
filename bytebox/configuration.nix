@@ -380,6 +380,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     input-leap
     zulip
     meshlab
+    gpu-screen-recorder
+    gpu-screen-recorder-gtk
 
     # Talk with monkeys
     #signal-desktop # killed for flatpak cuz this doesnt update often
