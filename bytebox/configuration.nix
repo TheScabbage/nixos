@@ -75,11 +75,14 @@
 
   # Enable sound with pipewire.
   security.rtkit.enable = true;
+
   services.pipewire = {
     enable = true;
+    #wireplumber.enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    jack.enable = true;
   };
 
   environment.variables = {
@@ -90,6 +93,14 @@
     #PAGER = "sh -c 'col -bx | bat -l man -p'";
     #MANPAGER = "sh -c 'col -bx | bat -l man -p'";
     DOTNET_ROOT = "${pkgs.dotnet-sdk_7}/share/dotnet";
+  };
+
+  systemd.services.gsr-kms-server = {
+    enable = true;
+    serviceConfig = {
+      AmbientCapabilities = "CAP_SYS_ADMIN";
+      ExecStart = "/run/current-system/sw/bin/gsr-kms-server";
+    };
   };
 
   #virtualisation.libvirtd.enable = true;
@@ -112,7 +123,7 @@
       inkscape
       rnote
       qdirstat
-      davinci-resolve
+      #davinci-resolve
       verilator
     ];
   };
@@ -168,10 +179,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu"
   '';
 
-  services.udev.packages = [
-    pkgs.android-udev-rules
-  ];
-
   services.syncthing = {
     enable = true;
     user = "scabbage";
@@ -192,16 +199,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     #glew
     #glfw2
     #libllvm
-    # used for embedded shit
-    pixman
-    libgcrypt
-    libslirp
-    glib
-    gtk3
-    cairo
-    gdk-pixbuf
-    vte
-    xorg.libX11
   ];
 
   programs.gnupg.agent = {
@@ -229,6 +226,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
   documentation.man.generateCaches = true;
 
   programs.wireshark.enable = true;
+
+  programs.gpu-screen-recorder.enable = true;
 
   ## System Packages
   environment.systemPackages = with pkgs; [
@@ -258,10 +257,10 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     inetutils
     screenkey
     jq
-    pop
     caddy
     nushell
 
+    gpu-screen-recorder
     mpv
     fd
     fselect
@@ -270,7 +269,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     unzip
     p7zip
     gnupg
-    pinentry
     docker-compose
     ffmpeg
     dos2unix
@@ -298,8 +296,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     inotify-tools
     bzip2
     e2fsprogs
-    cairo
-    mqttx
     zip
     appimage-run
     monero-cli
@@ -310,6 +306,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     mullvad-vpn
     syncthing
     syncthingtray
+    libnotify
 
     # Crypto
     libargon2
@@ -348,10 +345,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     unityhub
     godot
     qbittorrent
-    bitwarden
+    bitwarden-desktop
     thunderbird
     obsidian
-    freecad
     libreoffice
     kdePackages.kcalc
     kdePackages.spectacle
@@ -368,29 +364,26 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     wine64Packages.stagingFull
     #winePackages.stagingFull
     cups
-    platformio
     parsec-bin
     usbimager
-    rpi-imager
     rpcs3
     lorien
     qmk
-    keymapp
     mediawriter
     input-leap
     zulip
     meshlab
-    gpu-screen-recorder
     gpu-screen-recorder-gtk
 
     # Talk with monkeys
-    #signal-desktop # killed for flatpak cuz this doesnt update often
+    signal-desktop # kinda unreliable cuz it often locks the user out when not updated
+    signal-cli
     discord
     #( discord.override { withVencord = true; })
     ( vesktop.override { withSystemVencord = false; })
 
     # Allow neovim -> system clipboard
-    xclip
+    #xclip
     wl-clipboard
 
     ## Programming
@@ -424,10 +417,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
 
     # Vanity
     fastfetch
-
-    # Android
-    devenv
-    android-studio
 
     claude-code
   ];

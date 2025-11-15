@@ -58,9 +58,9 @@
     esptool
 
     # Python
-    #(python311.withPackages (p: with p; [
-    #    pip
-    #    openai
-    #]))
+    (python311.withPackages (p: with p; [
+        #pip
+        #openai
+    ]))
   ];
 }
