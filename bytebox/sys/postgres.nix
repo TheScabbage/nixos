@@ -10,7 +10,7 @@
     #    '';
     #};
 
-    environment.systemPackages = with pkgs; [
-        pgadmin4
-    ];
+    #environment.systemPackages = with pkgs; [
+    #    pgadmin4
+    #];
 }
