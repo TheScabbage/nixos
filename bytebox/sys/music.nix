@@ -4,7 +4,6 @@
     reaper
     audacity
     picard
-    rhythmbox
     yt-dlp
   ];
 }
