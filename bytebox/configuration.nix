@@ -366,7 +366,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     cups
     parsec-bin
     usbimager
-    rpcs3
     lorien
     qmk
     mediawriter
