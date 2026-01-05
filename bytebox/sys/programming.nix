@@ -59,6 +59,7 @@
 
     # Python
     (python311.withPackages (p: with p; [
+        numpy
         #pip
         #openai
     ]))
