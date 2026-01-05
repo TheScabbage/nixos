@@ -25,5 +25,6 @@
       r2modman
       gamemode
       clonehero
+      sameboy
   ];
 }
