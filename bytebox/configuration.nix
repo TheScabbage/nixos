@@ -28,6 +28,12 @@
     "https://ghostty.cachix.org"
   ];
 
+  networking.hosts = {
+    "143.198.73.121" = [ "cluster0" ];
+    "164.92.120.105" = [ "matchmaker0" ];
+    "2604:a880:4:1d0::7a4:0" = [ "matchmaker0" ];
+  };
+
   networking.hostName = "bytebox";
   networking.nameservers = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
   services.resolved.enable = true;
