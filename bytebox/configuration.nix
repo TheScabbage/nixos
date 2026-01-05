@@ -261,6 +261,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     delta
     trashy
     kondo
+    appimage-run
     man-pages
     man-pages-posix
     inetutils
@@ -268,6 +269,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     jq
     caddy
     nushell
+    imagemagick
 
     gpu-screen-recorder
     mpv
@@ -297,6 +299,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     tree-sitter
     evemu
     ydotool
+    kdotool
     busybox
     wlr-randr
     wmctrl
@@ -316,6 +319,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     syncthing
     syncthingtray
     libnotify
+    siril
 
     # Crypto
     libargon2
@@ -343,6 +347,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     xorg.libX11.dev
     logkeys
     calcurse
+    scanmem
 
     # Phat GUI Apps
     neovide
@@ -360,6 +365,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     libreoffice
     kdePackages.kcalc
     kdePackages.spectacle
+    kdePackages.kconfig
+    kdePackages.qttools
     shutter
     #rustdesk
     #rustdesk-server
@@ -370,7 +377,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     qpwgraph
     gparted
     qimgv
-    wine64Packages.stagingFull
+    wine64
+    freetype
     #winePackages.stagingFull
     cups
     parsec-bin
