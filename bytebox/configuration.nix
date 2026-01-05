@@ -235,6 +235,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
 
   programs.gpu-screen-recorder.enable = true;
 
+  # Make neovim the default text editor
+  environment.variables.EDITOR = "nvim";
+
   ## System Packages
   environment.systemPackages = with pkgs; [
     ##  CLI Tools
