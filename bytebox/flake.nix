@@ -3,11 +3,14 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    nixpkgs-roslyn.url = "github:NixOS/nixpkgs/a595dde4d0d3";
+    #nixpkgs-roslyn.url = "github:NixOS/nixpkgs/a595dde4d0d3";
     #nixpkgs-unityhub.url = "github:NixOS/nixpkgs/517841072fbf8de9ac8f305c1340ce8fcf764a5f";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-roslyn, ... }:
+  outputs = { 
+    self, nixpkgs, 
+    #nixpkgs-roslyn, 
+    ... }:
   let
     lib = nixpkgs.lib;
   in {
@@ -22,9 +25,9 @@
             };
 
             nixpkgs.overlays = [
-              (final: prev: {
-                roslyn-ls = nixpkgs-roslyn.legacyPackages.${prev.system}.roslyn-ls;
-              })
+              #(final: prev: {
+              #  roslyn-ls = nixpkgs-roslyn.legacyPackages.${prev.system}.roslyn-ls;
+              #})
               #(final: prev: {
               #  unityhub = prev.unityhub.overrideAttrs (old: { allowUnfree = true; });
               #})
