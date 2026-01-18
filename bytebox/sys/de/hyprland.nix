@@ -22,6 +22,7 @@
         hyprshot
         hyprlandPlugins.hyprexpo
         hyprlandPlugins.hyprwinwrap
+        dunst
         xwayland
         xdg-desktop-portal-hyprland
         playerctl
