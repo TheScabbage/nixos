@@ -344,8 +344,12 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     libllvm
     ilspycmd
     gdb
-    xorg.libX11
-    xorg.libX11.dev
+    #xorg.libX11
+    #xorg.libX11.dev
+    #xorg.libXcursor
+    #xorg.libXinerama
+    #xorg.libXrandr
+    #xorg.libXi
     logkeys
     calcurse
     scanmem
