@@ -7,8 +7,8 @@
     ./sys/term.nix
     ./sys/bluetooth.nix
     ./sys/de/dm.nix
-    #./sys/de/kde.nix
-    ./sys/de/hyprland.nix
+    ./sys/de/kde.nix
+    #./sys/de/hyprland.nix
     ./sys/shell/fish.nix
     ./sys/keylogging.nix
     ./sys/postgres.nix
