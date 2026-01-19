@@ -185,6 +185,18 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="066
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu"
   '';
 
+  systemd.user.services.neovim-prewarm = {
+    description = "Prewarm Neovim";
+    after = [ "graphical-session.target" ];
+    wantedBy = [ "graphical-session.target" ];
+
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.neovim}/bin/nvim +q";
+      RemainAfterExit = false;
+    };
+  };
+
   services.syncthing = {
     enable = true;
     user = "scabbage";
