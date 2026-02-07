@@ -4,6 +4,7 @@
 
   # Use steam-hardware module for KK3 nintendo switch mode
   hardware.steam-hardware.enable = true;
+  hardware.opengl.enable = true;
 
   # Bluetooth xbox gamepads
   hardware.xpadneo.enable = true;
@@ -19,6 +20,7 @@
       steam
       steamcmd
       steam-tui
+      steam-run
       gamescope
       protonplus
       xemu
@@ -28,6 +30,8 @@
       sameboy
       moonlight
       sunshine
+      mesa
+      libva
   ];
 
   security.wrappers.sunshine = {
