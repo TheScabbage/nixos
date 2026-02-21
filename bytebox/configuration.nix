@@ -275,7 +275,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
   services.pcscd.enable = true;
 
   virtualisation.docker.enable = true;
-  programs.adb.enable = true;
 
   #virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "scabbage" ];
