@@ -330,6 +330,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     caddy
     nushell
     imagemagick
+    sshfs
 
     gpu-screen-recorder
     mpv
@@ -416,8 +417,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     kooha
 
     # Phat GUI Apps
+    ghostty
     neovide
-    librewolf
+    #librewolf
     (firefox.override {
         cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
       })
@@ -456,6 +458,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     zulip
     meshlab
     gpu-screen-recorder-gtk
+    deskflow
 
     # Talk with monkeys
     signal-desktop # kinda unreliable cuz it often locks the user out when not updated
@@ -484,7 +487,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     vala
     nodejs_22
     ghc
-    julia
 
     # DE Shit
     electron
