@@ -14,7 +14,7 @@
   hardware.xone.enable = true;
 
   # Fixes Finals crashing on startup
-  boot.kernelParams = [ "clearcpuid=304" ];
+  #boot.kernelParams = [ "clearcpuid=304" ];
 
   environment.systemPackages = with pkgs; [
       steam
