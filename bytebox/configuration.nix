@@ -331,6 +331,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     nushell
     imagemagick
     sshfs
+    testdisk
 
     gpu-screen-recorder
     mpv
@@ -439,6 +440,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     #rustdesk
     #rustdesk-server
     #xemu
+    rpcs3
     #qemu_full
     #virt-manager
     ksnip
