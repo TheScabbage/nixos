@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    #nixpkgs.url = "github:NixOS/nixpkgs/68d8aa3d661f0e6bd5862291b5bb263b2a6595c9";
     #nixpkgs.url = "github:NixOS/nixpkgs/bde09022887110deb780067364a0818e89258968";
     #nixpkgs-roslyn.url = "github:NixOS/nixpkgs/a595dde4d0d3";
     #nixpkgs-unityhub.url = "github:NixOS/nixpkgs/517841072fbf8de9ac8f305c1340ce8fcf764a5f";
