@@ -35,7 +35,7 @@
   };
 
   networking.hostName = "bytebox";
-  networking.nameservers = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
+  networking.nameservers = [ "1.1.1.1" "8.8.8.8" "9.9.9.9" ];
   services.resolved.enable = true;
 
   boot.loader.systemd-boot.enable = true;
@@ -311,6 +311,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     wget
     curl
     tmux
+    screen
     zellij
     bat
     eza
