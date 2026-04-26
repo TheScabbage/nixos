@@ -58,6 +58,7 @@
     esptool
 
     # Python
+    python3
     #(python311.withPackages (p: with p; [
     #    numpy
     #    matplotlib
