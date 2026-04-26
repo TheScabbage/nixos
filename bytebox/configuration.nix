@@ -301,6 +301,11 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
   # Make neovim the default text editor
   environment.variables.EDITOR = "nvim";
 
+  services.printing = {
+    enable = true;
+    drivers = [pkgs.brlaser];
+  };
+
   ## System Packages
   environment.systemPackages = with pkgs; [
     ##  CLI Tools
