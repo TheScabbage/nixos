@@ -35,7 +35,12 @@
   };
 
   networking.hostName = "bytebox";
-  networking.nameservers = [ "1.1.1.1" "8.8.8.8" "9.9.9.9" ];
+  networking.nameservers = [ 
+    #"1.1.1.1"
+    "8.8.8.8"
+    "9.9.9.9"
+  ];
+
   services.resolved.enable = true;
 
   boot.loader.systemd-boot.enable = true;
