@@ -171,7 +171,6 @@
     description = "scabbage";
     extraGroups = [ "audio" "networkmanager" "wheel" "libvirtd" "dialout" "docker" "plugdev" "input" "uinput" "wireshark" "kvm" "adbusers" ];
     packages = with pkgs; [
-      chromium
       gimp
       krita
       glava
@@ -427,9 +426,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     ghostty
     neovide
     #librewolf
-    (firefox.override {
-        cfg.nativeMessagingHosts.packages = [pkgs.plasma5Packages.plasma-browser-integration];
-      })
+    firefox
+    ungoogled-chromium
+    brave
     vscode
     unityhub
     godot
