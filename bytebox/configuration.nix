@@ -151,7 +151,7 @@
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = "true";
     #PAGER = "sh -c 'col -bx | bat -l man -p'";
     #MANPAGER = "sh -c 'col -bx | bat -l man -p'";
-    DOTNET_ROOT = "${pkgs.dotnet-sdk_7}/share/dotnet";
+    DOTNET_ROOT = "${pkgs.dotnet-sdk}/share/dotnet";
   };
 
   systemd.services.gsr-kms-server = {
@@ -401,8 +401,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     libargon2
     ecdsautils
 
-    dotnet-runtime_7
-    dotnet-sdk_7
+    dotnet-runtime
+    dotnet-sdk
     #dotnet-runtime_6
     #dotnet-sdk_6
 
