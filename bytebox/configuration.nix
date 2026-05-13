@@ -339,7 +339,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     jq
     caddy
     nushell
-    imagemagick
+    (imagemagick.override { fftwSupport = true; })
     sshfs
     testdisk
     nix-search-cli
@@ -472,8 +472,10 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="3297", MODE:="0666", SYMLINK+="ignition_dfu
     input-leap
     zulip
     meshlab
+    f3d
     gpu-screen-recorder-gtk
     deskflow
+    sidequest
 
     # Talk with monkeys
     signal-desktop # kinda unreliable cuz it often locks the user out when not updated
